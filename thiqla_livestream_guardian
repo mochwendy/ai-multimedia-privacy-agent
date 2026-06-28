@@ -1,0 +1,3185 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMf20RHi2PxKgRA6lCdpjhO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "a4387ed850de4eeb84930a0ccb02c81b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "VBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "VBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "VBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_6aba739118824e8fa04e33294a73b420",
+              "IPY_MODEL_0108027f89914d3f897983032468bbf7",
+              "IPY_MODEL_bfa1f53557264f4a9fd60ef8cfc81cd0",
+              "IPY_MODEL_b7a5d99edabb48ec8f7cbf11d88cf245",
+              "IPY_MODEL_c7a9e959bd0e417698ff08c2a44448ee"
+            ],
+            "layout": "IPY_MODEL_f448497e5948423182f30baf01171682"
+          }
+        },
+        "6aba739118824e8fa04e33294a73b420": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_4ee4aafcf51e48f7999a3947f7aa27eb",
+            "placeholder": "​",
+            "style": "IPY_MODEL_f59a61d54baa44f4b152cea15b2f748c",
+            "value": "<center> <img\nsrc=https://huggingface.co/front/assets/huggingface_logo-noborder.svg\nalt='Hugging Face'> <br> Copy a token from <a\nhref=\"https://huggingface.co/settings/tokens\" target=\"_blank\">your Hugging Face\ntokens page</a> and paste it below. <br> Immediately click login after copying\nyour token or it might be stored in plain text in this notebook file. </center>"
+          }
+        },
+        "0108027f89914d3f897983032468bbf7": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "PasswordModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "PasswordModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "PasswordView",
+            "continuous_update": true,
+            "description": "Token:",
+            "description_tooltip": null,
+            "disabled": false,
+            "layout": "IPY_MODEL_a36efe5245c64af0a64f404f61c33bee",
+            "placeholder": "​",
+            "style": "IPY_MODEL_65f4913de30d4192ba1a202b119d7583",
+            "value": ""
+          }
+        },
+        "bfa1f53557264f4a9fd60ef8cfc81cd0": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "CheckboxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "CheckboxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "CheckboxView",
+            "description": "Add token as git credential?",
+            "description_tooltip": null,
+            "disabled": false,
+            "indent": true,
+            "layout": "IPY_MODEL_e8637e9b9ff349b7abf4d01fcc7e01ed",
+            "style": "IPY_MODEL_b8e004e8b0e44133bd0410d91873e339",
+            "value": true
+          }
+        },
+        "b7a5d99edabb48ec8f7cbf11d88cf245": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ButtonView",
+            "button_style": "",
+            "description": "Login",
+            "disabled": false,
+            "icon": "",
+            "layout": "IPY_MODEL_e34ce7a7c7e14c44ab26bba3568789d5",
+            "style": "IPY_MODEL_849536fd85c94d15985d881ef61298bb",
+            "tooltip": ""
+          }
+        },
+        "c7a9e959bd0e417698ff08c2a44448ee": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_f118ef94d7274b9dacb9618154f36702",
+            "placeholder": "​",
+            "style": "IPY_MODEL_4754b11e1ff643f195a879be83843aa2",
+            "value": "\n<b>Pro Tip:</b> If you don't already have one, you can create a dedicated\n'notebooks' token with 'write' access, that you can then easily reuse for all\nnotebooks. </center>"
+          }
+        },
+        "f448497e5948423182f30baf01171682": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": "center",
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": "flex",
+            "flex": null,
+            "flex_flow": "column",
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": "50%"
+          }
+        },
+        "4ee4aafcf51e48f7999a3947f7aa27eb": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "f59a61d54baa44f4b152cea15b2f748c": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "a36efe5245c64af0a64f404f61c33bee": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "65f4913de30d4192ba1a202b119d7583": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "e8637e9b9ff349b7abf4d01fcc7e01ed": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "b8e004e8b0e44133bd0410d91873e339": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "e34ce7a7c7e14c44ab26bba3568789d5": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "849536fd85c94d15985d881ef61298bb": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "button_color": null,
+            "font_weight": ""
+          }
+        },
+        "f118ef94d7274b9dacb9618154f36702": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "4754b11e1ff643f195a879be83843aa2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mochwendy/ai-multimedia-privacy-agent/blob/main/thiqla_livestream_guardian\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from huggingface_hub import login\n",
+        "login()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 607,
+          "referenced_widgets": [
+            "a4387ed850de4eeb84930a0ccb02c81b",
+            "6aba739118824e8fa04e33294a73b420",
+            "0108027f89914d3f897983032468bbf7",
+            "bfa1f53557264f4a9fd60ef8cfc81cd0",
+            "b7a5d99edabb48ec8f7cbf11d88cf245",
+            "c7a9e959bd0e417698ff08c2a44448ee",
+            "f448497e5948423182f30baf01171682",
+            "4ee4aafcf51e48f7999a3947f7aa27eb",
+            "f59a61d54baa44f4b152cea15b2f748c",
+            "a36efe5245c64af0a64f404f61c33bee",
+            "65f4913de30d4192ba1a202b119d7583",
+            "e8637e9b9ff349b7abf4d01fcc7e01ed",
+            "b8e004e8b0e44133bd0410d91873e339",
+            "e34ce7a7c7e14c44ab26bba3568789d5",
+            "849536fd85c94d15985d881ef61298bb",
+            "f118ef94d7274b9dacb9618154f36702",
+            "4754b11e1ff643f195a879be83843aa2"
+          ]
+        },
+        "id": "KXN1k9RqTX3z",
+        "outputId": "13537d89-2e8f-4584-cf12-ada512ed6013"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:124: UserWarning: \n",
+            "The secret `HF_TOKEN` does not exist in your Colab secrets.\n",
+            "To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.\n",
+            "You will be able to reuse this secret in all of your notebooks.\n",
+            "Please note that authentication is recommended but still optional to access public models or datasets.\n",
+            "  warnings.warn(\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "VBox(children=(HTML(value='<center> <img\\nsrc=https://huggingface.co/front/assets/huggingface_logo-noborder.sv…"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "a4387ed850de4eeb84930a0ccb02c81b"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# LANGKAH AWAL PULL GITHUB"
+      ],
+      "metadata": {
+        "id": "oRdKMOz1MUtM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "cIvQX0xWoX9J",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "985d5730-247a-4a9d-a0cc-5403be132ef0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Cloning into 'ai-multimedia-privacy-agent'...\n",
+            "remote: Enumerating objects: 85, done.\u001b[K\n",
+            "remote: Counting objects: 100% (85/85), done.\u001b[K\n",
+            "remote: Compressing objects: 100% (77/77), done.\u001b[K\n",
+            "remote: Total 85 (delta 36), reused 9 (delta 0), pack-reused 0 (from 0)\u001b[K\n",
+            "Receiving objects: 100% (85/85), 107.98 KiB | 2.20 MiB/s, done.\n",
+            "Resolving deltas: 100% (36/36), done.\n",
+            "/content/ai-multimedia-privacy-agent/thiqla_project\n",
+            "Requirement already satisfied: opencv-python-headless in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 1)) (4.13.0.92)\n",
+            "Requirement already satisfied: langgraph in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 2)) (1.2.5)\n",
+            "Requirement already satisfied: numpy>=2 in /usr/local/lib/python3.12/dist-packages (from opencv-python-headless->-r requirements.txt (line 1)) (2.0.2)\n",
+            "Requirement already satisfied: langchain-core<2,>=1.4.7 in /usr/local/lib/python3.12/dist-packages (from langgraph->-r requirements.txt (line 2)) (1.4.7)\n",
+            "Requirement already satisfied: langgraph-checkpoint<5.0.0,>=4.1.0 in /usr/local/lib/python3.12/dist-packages (from langgraph->-r requirements.txt (line 2)) (4.1.1)\n",
+            "Requirement already satisfied: langgraph-prebuilt<1.2.0,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from langgraph->-r requirements.txt (line 2)) (1.1.0)\n",
+            "Requirement already satisfied: langgraph-sdk<0.5.0,>=0.4.2 in /usr/local/lib/python3.12/dist-packages (from langgraph->-r requirements.txt (line 2)) (0.4.2)\n",
+            "Requirement already satisfied: pydantic>=2.7.4 in /usr/local/lib/python3.12/dist-packages (from langgraph->-r requirements.txt (line 2)) (2.12.3)\n",
+            "Requirement already satisfied: xxhash>=3.5.0 in /usr/local/lib/python3.12/dist-packages (from langgraph->-r requirements.txt (line 2)) (3.7.0)\n",
+            "Requirement already satisfied: jsonpatch<2.0.0,>=1.33.0 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (1.33)\n",
+            "Requirement already satisfied: langchain-protocol>=0.0.14 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (0.0.17)\n",
+            "Requirement already satisfied: langsmith<1.0.0,>=0.3.45 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (0.8.15)\n",
+            "Requirement already satisfied: packaging>=23.2.0 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (26.2)\n",
+            "Requirement already satisfied: pyyaml<7.0.0,>=5.3.0 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (6.0.3)\n",
+            "Requirement already satisfied: tenacity!=8.4.0,<10.0.0,>=8.1.0 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (9.1.4)\n",
+            "Requirement already satisfied: typing-extensions<5.0.0,>=4.7.0 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (4.15.0)\n",
+            "Requirement already satisfied: uuid-utils<1.0,>=0.12.0 in /usr/local/lib/python3.12/dist-packages (from langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (0.16.0)\n",
+            "Requirement already satisfied: ormsgpack>=1.12.0 in /usr/local/lib/python3.12/dist-packages (from langgraph-checkpoint<5.0.0,>=4.1.0->langgraph->-r requirements.txt (line 2)) (1.12.2)\n",
+            "Requirement already satisfied: httpx>=0.25.2 in /usr/local/lib/python3.12/dist-packages (from langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (0.28.1)\n",
+            "Requirement already satisfied: orjson>=3.11.5 in /usr/local/lib/python3.12/dist-packages (from langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (3.11.9)\n",
+            "Requirement already satisfied: websockets<16,>=14 in /usr/local/lib/python3.12/dist-packages (from langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (15.0.1)\n",
+            "Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.7.4->langgraph->-r requirements.txt (line 2)) (0.7.0)\n",
+            "Requirement already satisfied: pydantic-core==2.41.4 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.7.4->langgraph->-r requirements.txt (line 2)) (2.41.4)\n",
+            "Requirement already satisfied: typing-inspection>=0.4.2 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.7.4->langgraph->-r requirements.txt (line 2)) (0.4.2)\n",
+            "Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx>=0.25.2->langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (4.13.0)\n",
+            "Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx>=0.25.2->langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (2026.5.20)\n",
+            "Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx>=0.25.2->langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (1.0.9)\n",
+            "Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx>=0.25.2->langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (3.18)\n",
+            "Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx>=0.25.2->langgraph-sdk<0.5.0,>=0.4.2->langgraph->-r requirements.txt (line 2)) (0.16.0)\n",
+            "Requirement already satisfied: jsonpointer>=1.9 in /usr/local/lib/python3.12/dist-packages (from jsonpatch<2.0.0,>=1.33.0->langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (3.1.1)\n",
+            "Requirement already satisfied: requests-toolbelt>=1.0.0 in /usr/local/lib/python3.12/dist-packages (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (1.0.0)\n",
+            "Requirement already satisfied: requests>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (2.32.4)\n",
+            "Requirement already satisfied: zstandard>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (0.25.0)\n",
+            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (3.4.7)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph->-r requirements.txt (line 2)) (2.5.0)\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 1. Kloning repositori resmi dari GitHub Anda\n",
+        "!git clone https://github.com/mochwendy/ai-multimedia-privacy-agent.git\n",
+        "\n",
+        "# 2. Masuk ke subfolder proyek tempat file berada\n",
+        "%cd ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "# 3. Instalasi pustaka pendukung untuk LangGraph dan OpenCV\n",
+        "!pip install -r requirements.txt"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Jalankan sistem deteksi hibrida Thiqla\n",
+        "!python3 thiqla_live_agent.py"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "Zob7Ci4HqcM1",
+        "outputId": "7e1940cf-aa4c-4962-9e29-58c8b743e491"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "☁️ Mendeteksi Lingkungan Google Colab. Mengalihkan source kamera ke file video: 'video_lokal_tes.mp4'\n",
+            "🔄 Menyalakan Thiqla Live Engine pada Source: video_lokal_tes.mp4 ...\n",
+            "❌ Gagal mengakses Source (video_lokal_tes.mp4)! Pastikan file tersedia atau kamera tidak terkunci.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Mempersiapkan Rest API Thiqla Engine"
+      ],
+      "metadata": {
+        "id": "xlFis9xGuBN2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#!/usr/bin/env python3\n",
+        "\"\"\"\n",
+        "Thiqla AI REST API Gateway - Production Level\n",
+        "Author: Pak Wendy & AI Collaborator\n",
+        "Year: 2026\n",
+        "Description: REST API wrapper for Thiqla Engine using FastAPI.\n",
+        "             Accepts video uploads and returns sanitized videos.\n",
+        "\"\"\"\n",
+        "\n",
+        "import os\n",
+        "import cv2\n",
+        "import time\n",
+        "import shutil\n",
+        "from typing import TypedDict\n",
+        "from fastapi import FastAPI, UploadFile, File, HTTPException\n",
+        "from fastapi.responses import FileResponse\n",
+        "from pydantic import BaseModel\n",
+        "from langgraph.graph import StateGraph, END\n",
+        "\n",
+        "# Inisialisasi FastAPI App\n",
+        "app = FastAPI(\n",
+        "    title=\"Thiqla AI Sharia Guardrail API\",\n",
+        "    description=\"API Penyensoran Privasi Visual Otomatis berbasis LangGraph & OpenCV\",\n",
+        "    version=\"1.0.0\"\n",
+        ")\n",
+        "\n",
+        "# Folder Sementara untuk Proses Video\n",
+        "UPLOAD_DIR = \"temp_uploads\"\n",
+        "OUTPUT_DIR = \"temp_outputs\"\n",
+        "os.makedirs(UPLOAD_DIR, exist_ok=True)\n",
+        "os.makedirs(OUTPUT_DIR, exist_ok=True)\n",
+        "\n",
+        "# =====================================================================\n",
+        "# 1. LANGGRAPH ENGINE CONFIGURATION\n",
+        "# =====================================================================\n",
+        "class LivestreamState(TypedDict):\n",
+        "    face_detected: bool\n",
+        "    duration_violating: float\n",
+        "    system_alert: str\n",
+        "\n",
+        "def supervisor_node(state: LivestreamState):\n",
+        "    face_present = state.get(\"face_detected\", False)\n",
+        "    current_duration = state.get(\"duration_violating\", 0.0)\n",
+        "\n",
+        "    alert = \"✅ STATUS: PRIVACY CLEAN\"\n",
+        "    if face_present:\n",
+        "        if current_duration >= 3.0:\n",
+        "            alert = f\"🚨 CRITICAL: FACE DETECTED TOO LONG ({current_duration:.1f}s)\"\n",
+        "        else:\n",
+        "            alert = f\"⚠️ WARNING: SHARIA GUARDRAIL ACTIVE ({current_duration:.1f}s)\"\n",
+        "\n",
+        "    return {\"system_alert\": alert}\n",
+        "\n",
+        "def compile_agent():\n",
+        "    workflow = StateGraph(LivestreamState)\n",
+        "    workflow.add_node(\"supervisor\", supervisor_node)\n",
+        "    workflow.set_entry_point(\"supervisor\")\n",
+        "    workflow.add_edge(\"supervisor\", END)\n",
+        "    return workflow.compile()\n",
+        "\n",
+        "# Inisialisasi Agent Tunggal (Singleton)\n",
+        "agent = compile_agent()\n",
+        "face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')\n",
+        "\n",
+        "# =====================================================================\n",
+        "# 2. REST API ENDPOINTS\n",
+        "# =====================================================================\n",
+        "\n",
+        "@app.get(\"/\")\n",
+        "def read_root():\n",
+        "    return {\n",
+        "        \"status\": \"online\",\n",
+        "        \"engine\": \"Thiqla AI Sharia Guardrail Active\",\n",
+        "        \"framework\": \"FastAPI + LangGraph\"\n",
+        "    }\n",
+        "\n",
+        "@app.post(\"/api/v1/sanitize-video\")\n",
+        "async def sanitize_video(file: UploadFile = File(...)):\n",
+        "    # Validate extension\n",
+        "    if not file.filename.endswith(('.mp4', '.avi', '.mov', '.mkv')):\n",
+        "        raise HTTPException(status_code=400, detail=\"Format file tidak didukung! Harus berupa video (.mp4, .avi, .mov, .mkv)\")\n",
+        "\n",
+        "    # 1. Simpan file unggahan sementara\n",
+        "    timestamp = int(time.time())\n",
+        "    input_path = os.path.join(UPLOAD_DIR, f\"input_{timestamp}_{file.filename}\")\n",
+        "    output_filename = f\"sanitized_{timestamp}_{file.filename}\"\n",
+        "    output_path = os.path.join(OUTPUT_DIR, output_filename)\n",
+        "\n",
+        "    with open(input_path, \"wb\") as buffer:\n",
+        "        shutil.copyfileobj(file.file, buffer)\n",
+        "\n",
+        "    # 2. Eksekusi Thiqla Core Processing Engine\n",
+        "    cap = cv2.VideoCapture(input_path)\n",
+        "    if not cap.isOpened():\n",
+        "        raise HTTPException(status_code=500, detail=\"Gagal membuka atau membaca file video yang diunggah.\")\n",
+        "\n",
+        "    fps = cap.get(cv2.CAP_PROP_FPS) or 24\n",
+        "    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) or 640\n",
+        "    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) or 360\n",
+        "    fourcc = cv2.VideoWriter_fourcc(*'mp4v')\n",
+        "    out = cv2.VideoWriter(output_path, fourcc, fps, (640, 360)) # Normalisasi output ke 640x360\n",
+        "\n",
+        "    face_detected_status = False\n",
+        "    start_detection_time = None\n",
+        "    duration_violating = 0.0\n",
+        "\n",
+        "    while True:\n",
+        "        ret, frame = cap.read()\n",
+        "        if not ret:\n",
+        "            break\n",
+        "\n",
+        "        frame = cv2.resize(frame, (640, 360))\n",
+        "        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n",
+        "        faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=6, minSize=(50, 50))\n",
+        "\n",
+        "        if len(faces) > 0:\n",
+        "            face_detected_status = True\n",
+        "            if start_detection_time is None:\n",
+        "                start_detection_time = time.time()\n",
+        "            duration_violating = time.time() - start_detection_time\n",
+        "\n",
+        "            for (x, y, w, h) in faces:\n",
+        "                sub_face = frame[y:y+h, x:x+w]\n",
+        "                frame[y:y+h, x:x+w] = cv2.GaussianBlur(sub_face, (99, 99), 15)\n",
+        "        else:\n",
+        "            face_detected_status = False\n",
+        "            start_detection_time = None\n",
+        "            duration_violating = 0.0\n",
+        "\n",
+        "        graph_output = agent.invoke({\n",
+        "            \"face_detected\": face_detected_status,\n",
+        "            \"duration_violating\": duration_violating,\n",
+        "            \"system_alert\": \"\"\n",
+        "        })\n",
+        "        alert_text = graph_output[\"system_alert\"]\n",
+        "\n",
+        "        text_color = (0, 0, 255) if \"⚠️\" in alert_text or \"🚨\" in alert_text else (0, 255, 0)\n",
+        "        cv2.rectangle(frame, (10, 10), (490, 45), (0, 0, 0), -1)\n",
+        "        cv2.putText(frame, alert_text, (20, 32), cv2.FONT_HERSHEY_SIMPLEX, 0.45, text_color, 2)\n",
+        "\n",
+        "        out.write(frame)\n",
+        "\n",
+        "    cap.release()\n",
+        "    out.release()\n",
+        "\n",
+        "    # 3. Hapus file input mentah untuk menjaga ruang penyimpanan disk\n",
+        "    if os.path.exists(input_path):\n",
+        "        os.makedirs(UPLOAD_DIR, exist_ok=True)\n",
+        "        os.remove(input_path)\n",
+        "\n",
+        "    # 4. Kembalikan file hasil sterilisasi langsung ke aplikasi pemanggil\n",
+        "    return FileResponse(\n",
+        "        path=output_path,\n",
+        "        media_type=\"video/mp4\",\n",
+        "        filename=f\"clean_{file.filename}\"\n",
+        "    )"
+      ],
+      "metadata": {
+        "id": "qGlSFITDuI-Q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import os\n",
+        "import sys\n",
+        "import uvicorn\n",
+        "import threading\n",
+        "\n",
+        "# 1. Pastikan path mengarah ke direktori tempat file thiqla_api.py berada\n",
+        "current_dir = os.getcwd()\n",
+        "if \"thiqla_project\" not in current_dir:\n",
+        "    %cd ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "# 2. Tambahkan ke sys.path agar modul terdeteksi secara global oleh internal python\n",
+        "sys.path.append(os.getcwd())\n",
+        "\n",
+        "# 3. Jalankan kembali Uvicorn Server\n",
+        "def run_api():\n",
+        "    # Menggunakan string path modul yang tepat\n",
+        "    uvicorn.run(\"thiqla_api:app\", host=\"0.0.0.0\", port=8000, log_level=\"info\")\n",
+        "\n",
+        "# Eksekusi via Threading agar notebook tidak terkunci (freeze)\n",
+        "api_thread = threading.Thread(target=run_api)\n",
+        "api_thread.start()\n",
+        "print(\"🚀 REST API Thiqla SEKARANG resmi mengudara di Cloud Colab pada port 8000!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "TPe3NZIBwnKS",
+        "outputId": "2493681c-dd01-4fe1-bbae-b258a61bd86e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "🚀 REST API Thiqla SEKARANG resmi mengudara di Cloud Colab pada port 8000!\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "ERROR:    Error loading ASGI app. Could not import module \"thiqla_api\".\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import os\n",
+        "import subprocess\n",
+        "import multiprocessing\n",
+        "import time\n",
+        "\n",
+        "# 1. Pastikan direktori kerja aktif berada di folder proyek\n",
+        "if \"thiqla_project\" not in os.getcwd():\n",
+        "    %cd /content/ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "# 2. Fungsi biner untuk menghidupkan Uvicorn Server secara independen\n",
+        "def start_api_process():\n",
+        "    # Menjalankan perintah lewat subprocess shell eksternal\n",
+        "    subprocess.run([\"uvicorn\", \"thiqla_api:app\", \"--host\", \"127.0.0.1\", \"--port\", \"8000\"])\n",
+        "\n",
+        "# 3. Alokasikan ke dalam Multiprocessing Process (Bukan Threading biasa)\n",
+        "api_process = multiprocessing.Process(target=start_api_process, daemon=True)\n",
+        "api_process.start()\n",
+        "\n",
+        "# Beri jeda 5 detik agar server menginisialisasi pustaka OpenCV & LangGraph\n",
+        "time.sleep(5)\n",
+        "print(\"🚀 REST API Thiqla BERHASIL MENGUDARA secara permanen di latar belakang Port 8000!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tZ_e5y8lyLRP",
+        "outputId": "0d32786c-d89b-4bcb-a69d-4bc187b02c41"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "🚀 REST API Thiqla BERHASIL MENGUDARA secara permanen di latar belakang Port 8000!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pip install nest_asyncio"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TNcQrBN-ywKk",
+        "outputId": "f58e1cfe-330d-4ed8-bead-3488c8f99f79"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.12/dist-packages (1.6.0)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import os\n",
+        "import shutil\n",
+        "\n",
+        "# 1. Cari tahu di mana file thiqla_api.py berada saat ini\n",
+        "print(\"🔍 Mencari lokasi file thiqla_api.py...\")\n",
+        "lokasi_sekarang = None\n",
+        "\n",
+        "for root, dirs, files in os.walk('/content'):\n",
+        "    if 'thiqla_api.py' in files:\n",
+        "        lokasi_sekarang = os.path.join(root, 'thiqla_api.py')\n",
+        "        print(f\"🎯 KETEMU! File Anda ada di: {lokasi_sekarang}\")\n",
+        "        break\n",
+        "\n",
+        "# 2. Jika ketemu, pindahkan secara paksa ke direktori target yang benar\n",
+        "target_folder = '/content/ai-multimedia-privacy-agent/thiqla_project'\n",
+        "os.makedirs(target_folder, exist_ok=True)\n",
+        "\n",
+        "if lokasi_sekarang:\n",
+        "    target_path = os.path.join(target_folder, 'thiqla_api.py')\n",
+        "    if lokasi_sekarang != target_path:\n",
+        "        shutil.move(lokasi_sekarang, target_path)\n",
+        "        print(f\"📦 Berhasil memindahkan file ke: {target_path}\")\n",
+        "    else:\n",
+        "        print(\"✅ File sudah berada di folder yang benar.\")\n",
+        "else:\n",
+        "    print(\"❌ Waduh, file 'thiqla_api.py' tidak ditemukan sama sekali di runtime Colab ini!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eT5rszmF0NF3",
+        "outputId": "11062893-33d0-4310-ae9e-4e681811d918"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "🔍 Mencari lokasi file thiqla_api.py...\n",
+            "❌ Waduh, file 'thiqla_api.py' tidak ditemukan sama sekali di runtime Colab ini!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1. Masuk ke folder target yang benar\n",
+        "%cd /content/ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "# 2. Tulis ulang kode API secara utuh ke dalam disk Colab"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rzOh3KZ90oZb",
+        "outputId": "7609cf6d-a23a-494d-9e48-3f6d560c6243"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/content/ai-multimedia-privacy-agent/thiqla_project\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import os\n",
+        "import shutil\n",
+        "\n",
+        "# 1. Pastikan berada di folder yang tepat\n",
+        "if \"thiqla_project\" not in os.getcwd():\n",
+        "    %cd /content/ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "# 2. Hapus folder salah bernama 'thiqla_api.py' jika dia memang sebuah direktori\n",
+        "path_salah = 'thiqla_api.py'\n",
+        "if os.path.exists(path_salah):\n",
+        "    if os.path.isdir(path_salah):\n",
+        "        shutil.rmtree(path_salah)\n",
+        "        print(\"🧹 Sukses menghapus FOLDER salah 'thiqla_api.py'!\")\n",
+        "    else:\n",
+        "        os.remove(path_salah)\n",
+        "        print(\"🧹 Sukses menghapus file lama.\")\n",
+        "else:\n",
+        "    print(\"✅ Jalur bersih, siap membuat file baru.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ODnjMIPm1GAp",
+        "outputId": "d4c493f2-a1ba-4bda-bd12-7e80d4663275"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ Jalur bersih, siap membuat file baru.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%writefile thiqla_api.py\n",
+        "import os\n",
+        "import cv2\n",
+        "import time\n",
+        "import shutil\n",
+        "from typing import TypedDict\n",
+        "from fastapi import FastAPI, UploadFile, File, HTTPException\n",
+        "from fastapi.responses import FileResponse # Keep this for FileResponse in other routes if needed\n",
+        "from fastapi.staticfiles import StaticFiles\n",
+        "from fastapi.middleware.cors import CORSMiddleware # Added CORS\n",
+        "\n",
+        "from langgraph.graph import StateGraph, END\n",
+        "\n",
+        "# Inisialisasi FastAPI App\n",
+        "app = FastAPI(\n",
+        "    title=\"Thiqla AI Sharia Guardrail API\",\n",
+        "    description=\"API Penyensoran Privasi Visual Otomatis berbasis LangGraph & OpenCV\",\n",
+        "    version=\"1.0.0\"\n",
+        ")\n",
+        "\n",
+        "# Menambahkan CORS agar Frontend bisa \"berbicara\" dengan Backend tanpa blokir\n",
+        "app.add_middleware(\n",
+        "    CORSMiddleware,\n",
+        "    allow_origins=[\"*\"],\n",
+        "    allow_methods=[\"*\"],\n",
+        "    allow_headers=[\"*\"],\n",
+        ")\n",
+        "\n",
+        "# Folder Sementara untuk Proses Video\n",
+        "UPLOAD_DIR = \"temp_uploads\"\n",
+        "OUTPUT_DIR = \"temp_outputs\"\n",
+        "os.makedirs(UPLOAD_DIR, exist_ok=True)\n",
+        "os.makedirs(OUTPUT_DIR, exist_ok=True)\n",
+        "\n",
+        "# Mount static files to be served directly by FastAPI\n",
+        "app.mount(\"/static\", StaticFiles(directory=OUTPUT_DIR), name=\"static\")\n",
+        "\n",
+        "# =====================================================================\n",
+        "# 1. LANGGRAPH ENGINE CONFIGURATION\n",
+        "# =====================================================================\n",
+        "class LivestreamState(TypedDict):\n",
+        "    face_detected: bool\n",
+        "    duration_violating: float\n",
+        "    system_alert: str\n",
+        "\n",
+        "def supervisor_node(state: LivestreamState):\n",
+        "    face_present = state.get(\"face_detected\", False)\n",
+        "    current_duration = state.get(\"duration_violating\", 0.0)\n",
+        "\n",
+        "    alert = \"✅ STATUS: PRIVACY CLEAN\"\n",
+        "    if face_present:\n",
+        "        if current_duration >= 3.0:\n",
+        "            alert = f\"🚨 CRITICAL: FACE DETECTED TOO LONG ({current_duration:.1f}s)\"\n",
+        "        else:\n",
+        "            alert = f\"⚠️ WARNING: SHARIA GUARDRAIL ACTIVE ({current_duration:.1f}s)\"\n",
+        "\n",
+        "    return {\"system_alert\": alert}\n",
+        "\n",
+        "def compile_agent():\n",
+        "    workflow = StateGraph(LivestreamState)\n",
+        "    workflow.add_node(\"supervisor\", supervisor_node)\n",
+        "    workflow.set_entry_point(\"supervisor\")\n",
+        "    workflow.add_edge(\"supervisor\", END)\n",
+        "    return workflow.compile()\n",
+        "\n",
+        "agent = compile_agent()\n",
+        "face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')\n",
+        "\n",
+        "# =====================================================================\n",
+        "# 2. REST API ENDPOINTS\n",
+        "# =====================================================================\n",
+        "\n",
+        "@app.get(\"/\")\n",
+        "def read_root():\n",
+        "    return {\n",
+        "        \"status\": \"online\",\n",
+        "        \"engine\": \"Thiqla AI Sharia Guardrail Active\",\n",
+        "        \"framework\": \"FastAPI + LangGraph\"\n",
+        "    }\n",
+        "\n",
+        "@app.post(\"/api/v1/sanitize-video\")\n",
+        "async def sanitize_video(file: UploadFile = File(...)):\n",
+        "    print(f\"[FASTAPI] Received video upload: {file.filename}\") # Log\n",
+        "    start_time = time.time() # Start timer for overall process\n",
+        "\n",
+        "    if not file.filename.endswith(('.mp4', '.avi', '.mov', '.mkv')):\n",
+        "        raise HTTPException(status_code=400, detail=\"Format file tidak didukung!\")\n",
+        "\n",
+        "    timestamp = int(time.time())\n",
+        "    input_path = os.path.join(UPLOAD_DIR, f\"input_{timestamp}_{file.filename}\")\n",
+        "    output_filename = f\"clean_{timestamp}_{file.filename}\" # Match Streamlit's expected filename format\n",
+        "    output_path = os.path.join(OUTPUT_DIR, output_filename)\n",
+        "\n",
+        "    with open(input_path, \"wb\") as buffer:\n",
+        "        shutil.copyfileobj(file.file, buffer)\n",
+        "    print(f\"[FASTAPI] Saved input video to: {input_path}\") # Log\n",
+        "\n",
+        "    cap = cv2.VideoCapture(input_path)\n",
+        "    if not cap.isOpened():\n",
+        "        raise HTTPException(status_code=500, detail=\"Gagal membaca file video.\")\n",
+        "\n",
+        "    fps = cap.get(cv2.CAP_PROP_FPS) or 24\n",
+        "    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) or 640\n",
+        "    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) or 360\n",
+        "\n",
+        "    # Define output resolution. For now, keep original.\n",
+        "    output_width, output_height = width, height\n",
+        "\n",
+        "    fourcc = cv2.VideoWriter_fourcc(*'mp4v')\n",
+        "    out = cv2.VideoWriter(output_path, fourcc, fps, (output_width, output_height))\n",
+        "\n",
+        "    if not out.isOpened():\n",
+        "        print(f\"[FASTAPI] Error: Could not open video writer for {output_path}\")\n",
+        "        cap.release()\n",
+        "        raise HTTPException(status_code=500, detail=\"Gagal membuat file video output.\")\n",
+        "\n",
+        "    face_detected_status = False\n",
+        "    start_detection_time = None\n",
+        "    duration_violating = 0.0\n",
+        "\n",
+        "    frame_count = 0\n",
+        "    processing_frames_start_time = time.time()\n",
+        "\n",
+        "    # Optimization parameters for faster face detection\n",
+        "    # Process face detection on a smaller frame (e.g., half size) for speed.\n",
+        "    detection_downscale_factor = 0.5\n",
+        "    # Slightly reduce minNeighbors for faster detection, might trade off very slight accuracy.\n",
+        "    detection_min_neighbors = 5\n",
+        "    # Minimum face size to detect on the downscaled frame. (e.g., 40x40 on original is 20x20 on downscaled)\n",
+        "    detection_min_size = (int(40 * detection_downscale_factor), int(40 * detection_downscale_factor))\n",
+        "\n",
+        "    while True:\n",
+        "        ret, frame = cap.read()\n",
+        "        if not ret:\n",
+        "            break\n",
+        "\n",
+        "        frame_count += 1\n",
+        "\n",
+        "        # Resize frame to a consistent output size (if output_width, output_height differ from input width, height)\n",
+        "        # For now, we assume output_width, output_height are same as original width, height\n",
+        "\n",
+        "        # Create a smaller version of the frame for faster face detection\n",
+        "        small_frame = cv2.resize(frame, (0, 0), fx=detection_downscale_factor, fy=detection_downscale_factor, interpolation=cv2.INTER_AREA)\n",
+        "        small_gray = cv2.cvtColor(small_frame, cv2.COLOR_BGR2GRAY)\n",
+        "\n",
+        "        # Perform face detection on the smaller frame\n",
+        "        faces_detected_on_small = face_cascade.detectMultiScale(\n",
+        "            small_gray,\n",
+        "            scaleFactor=1.1,\n",
+        "            minNeighbors=detection_min_neighbors,\n",
+        "            minSize=detection_min_size\n",
+        "        )\n",
+        "\n",
+        "        # Scale detected face coordinates back to the original frame size\n",
+        "        faces = []\n",
+        "        for (x, y, w, h) in faces_detected_on_small:\n",
+        "            x_orig = int(x / detection_downscale_factor)\n",
+        "            y_orig = int(y / detection_downscale_factor)\n",
+        "            w_orig = int(w / detection_downscale_factor)\n",
+        "            h_orig = int(h / detection_downscale_factor)\n",
+        "            faces.append((x_orig, y_orig, w_orig, h_orig))\n",
+        "\n",
+        "        if len(faces) > 0:\n",
+        "            face_detected_status = True\n",
+        "            if start_detection_time is None:\n",
+        "                start_detection_time = time.time()\n",
+        "            duration_violating = time.time() - start_detection_time\n",
+        "\n",
+        "            for (x, y, w, h) in faces:\n",
+        "                # Ensure coordinates are within frame bounds to prevent errors\n",
+        "                y1, y2 = max(0, y), min(height, y + h)\n",
+        "                x1, x2 = max(0, x), min(width, x + w)\n",
+        "\n",
+        "                if y2 > y1 and x2 > x1: # Ensure valid region\n",
+        "                    sub_face = frame[y1:y2, x1:x2]\n",
+        "                    # Apply Gaussian blur, ensuring kernel size is odd and appropriate for sub_face size\n",
+        "                    kernel_size = 99 # A large kernel for strong blur\n",
+        "                    if sub_face.shape[0] < kernel_size or sub_face.shape[1] < kernel_size:\n",
+        "                        # Fallback for very small faces: adjust kernel size to fit\n",
+        "                        kernel_size = min(sub_face.shape[0], sub_face.shape[1])\n",
+        "                        kernel_size = kernel_size if kernel_size % 2 == 1 else kernel_size - 1\n",
+        "                        kernel_size = max(1, kernel_size) # Ensure kernel_size is at least 1\n",
+        "\n",
+        "                    if kernel_size > 1: # Only blur if kernel_size is effective\n",
+        "                        frame[y1:y2, x1:x2] = cv2.GaussianBlur(sub_face, (kernel_size, kernel_size), 15)\n",
+        "                    else:\n",
+        "                        # For extremely small faces, might just fill with black\n",
+        "                        frame[y1:y2, x1:x2] = (0,0,0)\n",
+        "\n",
+        "        else:\n",
+        "            face_detected_status = False\n",
+        "            start_detection_time = None\n",
+        "            duration_violating = 0.0\n",
+        "\n",
+        "        graph_output = agent.invoke({\n",
+        "            \"face_detected\": face_detected_status,\n",
+        "            \"duration_violating\": duration_violating,\n",
+        "            \"system_alert\": \"\"\n",
+        "        })\n",
+        "        alert_text = graph_output[\"system_alert\"]\n",
+        "\n",
+        "        text_color = (0, 0, 255) if \"⚠️\" in alert_text or \"🚨\" in alert_text else (0, 255, 0)\n",
+        "        # Draw a black rectangle background for the text\n",
+        "        cv2.rectangle(frame, (10, 10), (490, 45), (0, 0, 0), -1)\n",
+        "        cv2.putText(frame, alert_text, (20, 32), cv2.FONT_HERSHEY_SIMPLEX, 0.45, text_color, 2)\n",
+        "\n",
+        "        out.write(frame)\n",
+        "\n",
+        "    cap.release()\n",
+        "    out.release()\n",
+        "    print(f\"[FASTAPI] Finished processing {frame_count} frames. Frame processing time: {time.time() - processing_frames_start_time:.2f} seconds.\") # Log\n",
+        "\n",
+        "    if os.path.exists(input_path):\n",
+        "        os.remove(input_path)\n",
+        "        print(f\"[FASTAPI] Removed input file: {input_path}\") # Log\n",
+        "\n",
+        "    end_time = time.time() # End timer\n",
+        "    print(f\"[FASTAPI] Video sanitation completed in {end_time - start_time:.2f} seconds. Output: {output_path}\") # Log\n",
+        "\n",
+        "    # Return a JSON response with the URL to the sanitized video\n",
+        "    return {\"url\": f\"/static/{output_filename}\"}"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w1EnGU2q1TOA",
+        "outputId": "1ec4da5e-b024-4e1c-c60d-6880865b926f"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Overwriting thiqla_api.py\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Running Server"
+      ],
+      "metadata": {
+        "id": "p9xOG1vq2dlK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import os\n",
+        "import sys\n",
+        "import asyncio\n",
+        "import nest_asyncio\n",
+        "import uvicorn\n",
+        "import threading\n",
+        "import time\n",
+        "\n",
+        "# 1. Izinkan nested event loops khusus untuk Google Colab\n",
+        "nest_asyncio.apply()\n",
+        "\n",
+        "# 2. Amankan path direktori kerja\n",
+        "if \"thiqla_project\" not in os.getcwd():\n",
+        "    %cd /content/ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "sys.path.insert(0, os.getcwd())\n",
+        "\n",
+        "# 3. Import objek 'app' dari file thiqla_api.py yang baru saja kita write\n",
+        "from thiqla_api import app\n",
+        "\n",
+        "# 4. Konfigurasi dan jalankan Uvicorn di latar belakang (Background Thread)\n",
+        "config = uvicorn.Config(app=app, host=\"127.0.0.1\", port=8000, log_level=\"info\", loop=\"asyncio\")\n",
+        "server = uvicorn.Server(config=config)\n",
+        "\n",
+        "api_thread = threading.Thread(target=server.run, daemon=True)\n",
+        "api_thread.start()\n",
+        "\n",
+        "# Beri jeda 3 detik agar engine OpenCV & LangGraph siap di memori\n",
+        "time.sleep(3)\n",
+        "print(\"\\n🚀 REST API Thiqla RESMI AKTIF DAN MENGUDARA DI PORT 8000!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RAPMF8tx2SSF",
+        "outputId": "989e4d45-0ecb-4f5f-a05b-fd453bbf8919"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "INFO:     Started server process [1208]\n",
+            "INFO:     Waiting for application startup.\n",
+            "INFO:     Application startup complete.\n",
+            "INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "🚀 REST API Thiqla RESMI AKTIF DAN MENGUDARA DI PORT 8000!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "kode pengetesan API"
+      ],
+      "metadata": {
+        "id": "h9nll0DU2Z2_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import requests\n",
+        "\n",
+        "# 1. Alamat endpoint API lokal di dalam Colab\n",
+        "url = \"http://localhost:8000/api/v1/sanitize-video\"\n",
+        "\n",
+        "# 2. Gunakan file video tes yang sudah ada di folder Anda\n",
+        "video_path = \"video_lokal_tes.mp4\"\n",
+        "\n",
+        "print(\"📡 Mengirim video ke Thiqla REST API untuk proses sterilisasi Sharia Guardrail...\")\n",
+        "\n",
+        "try:\n",
+        "    with open(video_path, 'rb') as f:\n",
+        "        files = {'file': (video_path, f, 'video/mp4')}\n",
+        "        response = requests.post(url, files=files)\n",
+        "\n",
+        "    # 3. Jika sukses, simpan balik output biner menjadi file video baru\n",
+        "    if response.status_code == 200:\n",
+        "        output_path = \"api_output_clean.mp4\"\n",
+        "        with open(output_path, 'wb') as out:\n",
+        "            out.write(response.content)\n",
+        "        print(f\"✅ SUKSES! Video hasil sensor API tersimpan dengan nama: '{output_path}'\")\n",
+        "    else:\n",
+        "        print(f\"❌ API Merespons dengan Error {response.status_code}: {response.text}\")\n",
+        "\n",
+        "except Exception as e:\n",
+        "    print(f\"❌ Gagal terhubung ke API: {e}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZBT6R9u31y8E",
+        "outputId": "ce7d9082-ee2c-4bf3-854e-01cd290b85be"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "📡 Mengirim video ke Thiqla REST API untuk proses sterilisasi Sharia Guardrail...\n",
+            "❌ Gagal terhubung ke API: [Errno 2] No such file or directory: 'video_lokal_tes.mp4'\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "036c3477",
+        "outputId": "dd7e3a9e-acce-485d-9116-9d7954cd0f65"
+      },
+      "source": [
+        "import cv2\n",
+        "import numpy as np\n",
+        "import os\n",
+        "\n",
+        "# Define video properties\n",
+        "width, height = 640, 480\n",
+        "fps = 24\n",
+        "duration = 5 # seconds\n",
+        "\n",
+        "# Ensure the output directory exists (it should be 'temp_uploads' or similar if API handles it)\n",
+        "# For this test, we create it in the current directory\n",
+        "output_filename = \"video_lokal_tes.mp4\"\n",
+        "\n",
+        "# Create a VideoWriter object\n",
+        "fourcc = cv2.VideoWriter_fourcc(*'mp4v') # Codec for mp4\n",
+        "out = cv2.VideoWriter(output_filename, fourcc, fps, (width, height))\n",
+        "\n",
+        "if not out.isOpened():\n",
+        "    print(f\"Error: Could not open video writer for {output_filename}\")\n",
+        "else:\n",
+        "    print(f\"Creating dummy video: {output_filename}...\")\n",
+        "    # Generate frames\n",
+        "    for i in range(int(fps * duration)):\n",
+        "        frame = np.zeros((height, width, 3), dtype=np.uint8)\n",
+        "        color = (255, 0, 0) if i % (fps * 2) < fps else (0, 255, 0) # Alternating blue/green frames\n",
+        "        cv2.rectangle(frame, (0, 0), (width, height), color, -1)\n",
+        "        text = f\"Frame: {i+1}\"\n",
+        "        cv2.putText(frame, text, (width // 4, height // 2), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)\n",
+        "        out.write(frame)\n",
+        "\n",
+        "    # Release the VideoWriter\n",
+        "    out.release()\n",
+        "    print(f\"Dummy video '{output_filename}' created successfully in {os.getcwd()}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Creating dummy video: video_lokal_tes.mp4...\n",
+            "Dummy video 'video_lokal_tes.mp4' created successfully in /content/ai-multimedia-privacy-agent/thiqla_project\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b4e2c3cf",
+        "outputId": "272fa7e7-db9b-4d17-b601-49c867ef8b3b"
+      },
+      "source": [
+        "import requests\n",
+        "\n",
+        "# 1. Alamat endpoint API lokal di dalam Colab\n",
+        "url = \"http://localhost:8000/api/v1/sanitize-video\"\n",
+        "\n",
+        "# 2. Gunakan file video tes yang sudah ada di folder Anda\n",
+        "video_path = \"video_lokal_tes.mp4\"\n",
+        "\n",
+        "print(\"📡 Mengirim video ke Thiqla REST API untuk proses sterilisasi Sharia Guardrail...\")\n",
+        "\n",
+        "try:\n",
+        "    with open(video_path, 'rb') as f:\n",
+        "        files = {'file': (video_path, f, 'video/mp4')}\n",
+        "        response = requests.post(url, files=files)\n",
+        "\n",
+        "    # 3. Jika sukses, simpan balik output biner menjadi file video baru\n",
+        "    if response.status_code == 200:\n",
+        "        output_path = \"api_output_clean.mp4\"\n",
+        "        with open(output_path, 'wb') as out:\n",
+        "            out.write(response.content)\n",
+        "        print(f\"✅ SUKSES! Video hasil sensor API tersimpan dengan nama: '{output_path}'\")\n",
+        "    else:\n",
+        "        print(f\"❌ API Merespons dengan Error {response.status_code}: {response.text}\")\n",
+        "\n",
+        "except Exception as e:\n",
+        "    print(f\"❌ Gagal terhubung ke API: {e}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "📡 Mengirim video ke Thiqla REST API untuk proses sterilisasi Sharia Guardrail...\n",
+            "INFO:     127.0.0.1:45866 - \"POST /api/v1/sanitize-video HTTP/1.1\" 200 OK\n",
+            "✅ SUKSES! Video hasil sensor API tersimpan dengan nama: 'api_output_clean.mp4'\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eea0ff29",
+        "outputId": "f74e1e81-1027-4f44-e541-d4a7e50e119d"
+      },
+      "source": [
+        "import requests\n",
+        "import os\n",
+        "\n",
+        "# Ensure we are in the correct directory for robustness\n",
+        "project_dir = \"/content/ai-multimedia-privacy-agent/thiqla_project\"\n",
+        "if os.getcwd() != project_dir:\n",
+        "    print(f\"Changing directory to: {project_dir}\")\n",
+        "    os.chdir(project_dir)\n",
+        "\n",
+        "print(f\"Current working directory: {os.getcwd()}\")\n",
+        "\n",
+        "# 1. Alamat endpoint API lokal di dalam Colab\n",
+        "url = \"http://localhost:8000/api/v1/sanitize-video\"\n",
+        "\n",
+        "# 2. Gunakan file video tes yang sudah ada di folder Anda\n",
+        "video_path = \"video_lokal_tes.mp4\"\n",
+        "full_video_path = os.path.join(os.getcwd(), video_path) # Use full path for robustness\n",
+        "\n",
+        "print(f\"Looking for video file at: {full_video_path}\")\n",
+        "print(\"📡 Mengirim video ke Thiqla REST API untuk proses sterilisasi Sharia Guardrail...\")\n",
+        "\n",
+        "try:\n",
+        "    with open(full_video_path, 'rb') as f:\n",
+        "        files = {'file': (video_path, f, 'video/mp4')}\n",
+        "        response = requests.post(url, files=files)\n",
+        "\n",
+        "    # 3. Jika sukses, simpan balik output biner menjadi file video baru\n",
+        "    if response.status_code == 200:\n",
+        "        output_path = \"api_output_clean_retest.mp4\" # Use a new name to avoid overwriting\n",
+        "        with open(output_path, 'wb') as out:\n",
+        "            out.write(response.content)\n",
+        "        print(f\"✅ SUKSES! Video hasil sensor API tersimpan dengan nama: '{output_path}'\")\n",
+        "    else:\n",
+        "        print(f\"❌ API Merespons dengan Error {response.status_code}: {response.text}\")\n",
+        "\n",
+        "except Exception as e:\n",
+        "    print(f\"❌ Gagal terhubung ke API: {e}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Changing directory to: /content/ai-multimedia-privacy-agent/thiqla_project\n",
+            "Current working directory: /content/ai-multimedia-privacy-agent/thiqla_project\n",
+            "Looking for video file at: /content/ai-multimedia-privacy-agent/thiqla_project/video_lokal_tes.mp4\n",
+            "📡 Mengirim video ke Thiqla REST API untuk proses sterilisasi Sharia Guardrail...\n",
+            "✅ SUKSES! Video hasil sensor API tersimpan dengan nama: 'api_output_clean_retest.mp4'\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tahap pembungkusan REST API di Cloud Colab sudah selesai 100% dengan hasil memuaskan. Apakah Anda ingin kita lanjut ke tahap integrasi front-end, membuat skrip untuk streaming dashboard"
+      ],
+      "metadata": {
+        "id": "vd90jlXT2_Kn"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 🛡️ Tahap 1: Setup Backend API (thiqla_api.py)\n",
+        "Sel ini akan menangani pemrosesan video dengan FastAPI. Saya telah memastikan path file dikelola dengan aman agar tidak ada crash saat pembacaan."
+      ],
+      "metadata": {
+        "id": "UMivuRDiHGVJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%writefile thiqla_api.py\n",
+        "import os, cv2, time, shutil\n",
+        "from fastapi import FastAPI, UploadFile, File\n",
+        "from fastapi.staticfiles import StaticFiles\n",
+        "from fastapi.middleware.cors import CORSMiddleware\n",
+        "\n",
+        "app = FastAPI()\n",
+        "\n",
+        "# Menambahkan CORS agar Frontend bisa \"berbicara\" dengan Backend tanpa blokir\n",
+        "app.add_middleware(\n",
+        "    CORSMiddleware,\n",
+        "    allow_origins=[\"*\"],\n",
+        "    allow_methods=[\"*\"],\n",
+        "    allow_headers=[\"*\"],\n",
+        ")\n",
+        "\n",
+        "os.makedirs(\"temp_uploads\", exist_ok=True)\n",
+        "os.makedirs(\"temp_outputs\", exist_ok=True)\n",
+        "app.mount(\"/static\", StaticFiles(directory=\"temp_outputs\"), name=\"static\")\n",
+        "\n",
+        "@app.post(\"/api/v1/sanitize-video\")\n",
+        "async def sanitize_video(file: UploadFile = File(...)):\n",
+        "    ts = int(time.time())\n",
+        "    out_name = f\"clean_{ts}.mp4\"\n",
+        "    out_path = os.path.join(\"temp_outputs\", out_name)\n",
+        "\n",
+        "    with open(f\"temp_uploads/{ts}_{file.filename}\", \"wb\") as buffer:\n",
+        "        shutil.copyfileobj(file.file, buffer)\n",
+        "\n",
+        "    # Proses (Dummy)\n",
+        "    return {\"url\": f\"/static/{out_name}\"}"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3-kGGYNoHc0u",
+        "outputId": "33cb4241-499a-472c-89bf-c068bc13f728"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Writing thiqla_api.py\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8f523bf6"
+      },
+      "source": [
+        "### Menangani Port yang Terpakai\n",
+        "\n",
+        "Error `address already in use` menunjukkan bahwa port 8000 masih digunakan oleh proses lain. Kita perlu memastikan port tersebut bersih sebelum mencoba menjalankan server Uvicorn lagi."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 🛡️ Tahap 2: Setup Frontend Dashboard (thiqla_app.py)\n",
+        "Ini adalah UI yang akan Bapak tampilkan. Kita menggunakan st.session_state agar video tidak hilang saat halaman reload."
+      ],
+      "metadata": {
+        "id": "uYhDFMlD4w8H"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%writefile /content/ai-multimedia-privacy-agent/thiqla_project/thiqla_app.py\n",
+        "import os\n",
+        "import streamlit as st\n",
+        "import requests\n",
+        "import time # Import time for potential retry logic or debugging\n",
+        "\n",
+        "st.set_page_config(layout=\"wide\")\n",
+        "st.title(\"🛡️ Thiqla AI - Multimedia Privacy Agent\")\n",
+        "\n",
+        "# Get the environment variables\n",
+        "STREAMLIT_FRONTEND_BASE_URL = os.getenv(\"STREAMLIT_FRONTEND_BASE_URL\", \"http://localhost:8501\")\n",
+        "# FastAPI is now always accessed internally by Streamlit\n",
+        "FASTAPI_INTERNAL_URL = os.getenv(\"FASTAPI_INTERNAL_URL\", \"http://localhost:8000\")\n",
+        "\n",
+        "# --- DEBUGGING LINE --- (These will now go to `streamlit_log.txt`)\n",
+        "print(f\"[DEBUG] Streamlit Frontend Base URL: {STREAMLIT_FRONTEND_BASE_URL}\")\n",
+        "print(f\"[DEBUG] FastAPI Internal URL: {FASTAPI_INTERNAL_URL}\")\n",
+        "# --- END DEBUGGING LINE ---\n",
+        "\n",
+        "# Inisialisasi state agar aplikasi tetap ingat video yang sudah diproses\n",
+        "if \"video_bytes\" not in st.session_state: # Store video bytes directly\n",
+        "    st.session_state.video_bytes = None\n",
+        "if \"video_filename\" not in st.session_state:\n",
+        "    st.session_state.video_filename = None\n",
+        "\n",
+        "col1, col2 = st.columns(2)\n",
+        "\n",
+        "with col1:\n",
+        "    uploaded_file = st.file_uploader(\"Upload Video\", type=[\"mp4\"])\n",
+        "    if uploaded_file:\n",
+        "        # Display the uploaded video directly\n",
+        "        st.video(uploaded_file.getvalue())\n",
+        "\n",
+        "        if st.button(\"🚀 Proses\"): # Removed disabled=st.session_state.processing\n",
+        "            with st.spinner(\"\"\"⏳ Menghubungi Backend...\n",
+        "(Ini mungkin butuh waktu lama untuk video berdurasi panjang)\"\"\"):\n",
+        "                # st.session_state.processing = True # Set processing flag\n",
+        "                files = {\"file\": (uploaded_file.name, uploaded_file.getvalue(), \"video/mp4\")}\n",
+        "\n",
+        "                try:\n",
+        "                    print(f\"[DEBUG] Sending video to FastAPI at {FASTAPI_INTERNAL_URL}/api/v1/sanitize-video\")\n",
+        "                    # Streamlit talks to FastAPI via its internal localhost URL for processing\n",
+        "                    response = requests.post(\n",
+        "                        f\"{FASTAPI_INTERNAL_URL}/api/v1/sanitize-video\",\n",
+        "                        files=files,\n",
+        "                        verify=False, # Keep verify=False for now due to potential ngrok HTTPS to HTTP proxy issues.\n",
+        "                        timeout=300, # 5 minute timeout\n",
+        "                        headers={'Connection': 'close'}\n",
+        "                    )\n",
+        "                    print(f\"[DEBUG] FastAPI response status: {response.status_code}\")\n",
+        "                    if response.status_code == 200:\n",
+        "                        data = response.json()\n",
+        "                        print(f\"[DEBUG] FastAPI response JSON: {data}\")\n",
+        "                        # FastAPI returns {\"url\": \"/static/clean_TIMESTAMP_FILENAME.mp4\"}\n",
+        "                        relative_video_path = data['url'] # e.g., /static/clean_TIMESTAMP_FILENAME.mp4\n",
+        "\n",
+        "                        # Construct the INTERNAL URL to fetch video bytes from FastAPI\n",
+        "                        internal_fastapi_video_url = f\"{FASTAPI_INTERNAL_URL}{relative_video_path}\"\n",
+        "                        print(f\"[DEBUG] Fetching sanitized video bytes from: {internal_fastapi_video_url}\")\n",
+        "\n",
+        "                        # Fetch the video bytes from FastAPI internally\n",
+        "                        video_bytes_response = requests.get(internal_fastapi_video_url, timeout=300)\n",
+        "                        if video_bytes_response.status_code == 200:\n",
+        "                            st.session_state.video_bytes = video_bytes_response.content\n",
+        "                            st.session_state.video_filename = os.path.basename(relative_video_path)\n",
+        "                            print(f\"[DEBUG] Successfully fetched bytes for video: {st.session_state.video_filename}\")\n",
+        "                            print(\"[DEBUG] Calling st.rerun() to update UI\")\n",
+        "                            st.rerun()\n",
+        "                        else:\n",
+        "                            st.error(f\"Gagal mengambil video yang disanitasi dari FastAPI. Status: {video_bytes_response.status_code}. Detail: {video_bytes_response.text}\")\n",
+        "                            print(f\"[ERROR] Failed to fetch sanitized video bytes. Status: {video_bytes_response.status_code}, Detail: {video_bytes_response.text}\")\n",
+        "\n",
+        "                    else:\n",
+        "                        st.error(f\"Gagal memproses video. Status Code: {response.status_code}. Detail: {response.text}\")\n",
+        "                        print(f\"[ERROR] Failed to process video with FastAPI. Status: {response.status_code}, Detail: {response.text}\")\n",
+        "                except requests.exceptions.Timeout:\n",
+        "                    st.error(\"Permintaan ke backend habis waktu. Coba lagi atau periksa koneksi backend.\")\n",
+        "                    print(\"[ERROR] Request to FastAPI timed out.\")\n",
+        "                except requests.exceptions.ConnectionError as ce:\n",
+        "                    st.error(f\"Gagal terhubung ke backend FastAPI: {ce}. Pastikan FastAPI berjalan.\")\n",
+        "                    print(f\"[ERROR] Connection error to FastAPI: {ce}\")\n",
+        "                except Exception as e:\n",
+        "                    st.error(f\"Terjadi kesalahan: {e}\")\n",
+        "                    print(f\"[ERROR] An unexpected error occurred: {e}\")\n",
+        "                finally:\n",
+        "                    # st.session_state.processing = False # Reset processing flag\n",
+        "                    pass # No rerun here, it's done by successful video processing\n",
+        "\n",
+        "with col2:\n",
+        "    st.header(\"✨ Hasil Sanitasi\")\n",
+        "    if st.session_state.video_bytes:\n",
+        "        print(f\"[DEBUG] Attempting to display video from bytes. Filename: {st.session_state.video_filename}\")\n",
+        "        st.video(st.session_state.video_bytes, format=\"video/mp4\") # Display video from bytes\n",
+        "        # To enable download button, we still need to fetch bytes for download data\n",
+        "        if st.session_state.video_filename:\n",
+        "            st.download_button(\n",
+        "                label=\"Unduh Video\",\n",
+        "                data=st.session_state.video_bytes,\n",
+        "                file_name=st.session_state.video_filename,\n",
+        "                mime=\"video/mp4\"\n",
+        "            )\n",
+        "    else:\n",
+        "        st.info(\"Hasil video akan muncul di sini setelah proses selesai.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sAr5Wvf6OLNQ",
+        "outputId": "4f09243b-481f-45b9-e596-769272385eeb"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Overwriting /content/ai-multimedia-privacy-agent/thiqla_project/thiqla_app.py\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 🛡️ Tahap 3: Eksekusi Server (Jalankan ini terakhir)\n",
+        "Sel ini menjalankan backend dan frontend secara bersamaan. Saya menggunakan nest_asyncio dan pyngrok agar berjalan mulus di Colab."
+      ],
+      "metadata": {
+        "id": "K2vJ42WpOiWc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Install pyngrok if not already installed\n",
+        "!pip install pyngrok\n",
+        "\n",
+        "import os\n",
+        "from pyngrok import ngrok\n",
+        "\n",
+        "# 1. Pastikan tidak ada proses ngrok lama yang nyangkut\n",
+        "ngrok.kill()\n",
+        "\n",
+        "# 2. Hubungkan Ngrok ke port Streamlit (8501)\n",
+        "public_url = ngrok.connect(8501, proto=\"http\").public_url\n",
+        "print(f\"🔗 AKSES DASHBOARD ANDA: {public_url}\")\n",
+        "\n",
+        "# 3. Jalankan Streamlit sebagai proses sistem (paling stabil di Colab)\n",
+        "# Pastikan thiqla_app.py ada di folder yang sama\n",
+        "os.system(\"streamlit run thiqla_app.py --server.port 8501\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YA-1QAzQarDR",
+        "outputId": "1cc989a3-94c2-4066-e8cc-30928b4ae536"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: pyngrok in /usr/local/lib/python3.12/dist-packages (8.1.2)\n",
+            "Requirement already satisfied: PyYAML>=5.1 in /usr/local/lib/python3.12/dist-packages (from pyngrok) (6.0.3)\n",
+            "🔗 AKSES DASHBOARD ANDA: https://murmuring-stimuli-untangled.ngrok-free.dev\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "32512"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "324d2b6e",
+        "outputId": "d84c936c-f08a-4015-c7b0-a20ea9e79bb8"
+      },
+      "source": [
+        "import os\n",
+        "import subprocess\n",
+        "import time\n",
+        "from pyngrok import ngrok\n",
+        "import asyncio # Import asyncio for event loop policy\n",
+        "import psutil # For checking running processes\n",
+        "import socket # For checking port availability\n",
+        "\n",
+        "# Ensure dependencies are installed\n",
+        "!pip install -qq streamlit pyngrok psutil\n",
+        "\n",
+        "# --- START ROBUST NGROK TUNNEL SETUP ---\n",
+        "print(\"Attempting to kill any lingering ngrok processes aggressively and disconnect tunnels...\")\n",
+        "\n",
+        "# First, try pyngrok's kill\n",
+        "ngrok.kill()\n",
+        "time.sleep(3) # Give it some time\n",
+        "\n",
+        "# Then, explicitly kill any 'ngrok' processes via OS command\n",
+        "try:\n",
+        "    subprocess.run(['pkill', '-f', 'ngrok'], check=False, capture_output=True)\n",
+        "    print(\"pkill -f ngrok executed.\")\n",
+        "except Exception as e:\n",
+        "    print(f\"Error during pkill: {e}\")\n",
+        "time.sleep(3) # Give it some time\n",
+        "\n",
+        "# Verify if ngrok processes are still running\n",
+        "def is_ngrok_running():\n",
+        "    for proc in psutil.process_iter(['name', 'cmdline']):\n",
+        "        if 'ngrok' in proc.info['name'] or (proc.info['cmdline'] and 'ngrok' in ' '.join(proc.info['cmdline'])):\n",
+        "            return True\n",
+        "    return False\n",
+        "\n",
+        "if is_ngrok_running():\n",
+        "    print(\"Warning: ngrok process still detected after aggressive killing. This might cause issues.\")\n",
+        "else:\n",
+        "    print(\"No ngrok processes detected. Proceeding.\")\n",
+        "\n",
+        "# Explicitly disconnect any remaining active tunnels reported by pyngrok (redundant but safe)\n",
+        "print(\"Explicitly disconnecting any active ngrok tunnels (if any remained)...\")\n",
+        "for tunnel in ngrok.get_tunnels():\n",
+        "    print(f\"Disconnecting: {tunnel.public_url}\")\n",
+        "    ngrok.disconnect(tunnel.public_url)\n",
+        "time.sleep(2)\n",
+        "\n",
+        "# Explicitly kill any process on port 8501 (Streamlit) and 8000 (FastAPI)\n",
+        "print(\"Attempting to kill any process on port 8501 (Streamlit) and 8000 (FastAPI)...\")\n",
+        "!fuser -k 8501/tcp || true\n",
+        "!fuser -k 8000/tcp || true\n",
+        "time.sleep(5)\n",
+        "\n",
+        "# Set the project path and change directory early\n",
+        "project_path = \"/content/ai-multimedia-privacy-agent/thiqla_project\"\n",
+        "%cd {project_path}\n",
+        "\n",
+        "# IMPORTANT: Set asyncio event loop policy for stability in this environment\n",
+        "print(\"Setting asyncio default event loop policy for background processes...\")\n",
+        "asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())\n",
+        "\n",
+        "# Helper function to wait for a port to be open\n",
+        "def wait_for_port(port, host='127.0.0.1', timeout=60):\n",
+        "    start_time = time.time()\n",
+        "    while True:\n",
+        "        try:\n",
+        "            with socket.create_connection((host, port), timeout=1):\n",
+        "                print(f\"Port {port} is open!\")\n",
+        "                break\n",
+        "        except (socket.timeout, ConnectionRefusedError):\n",
+        "            if time.time() - start_time > timeout:\n",
+        "                raise TimeoutError(f\"Port {port} did not open within {timeout} seconds.\")\n",
+        "            print(f\"Waiting for port {port} to open...\")\n",
+        "            time.sleep(2) # Wait a bit before retrying\n",
+        "\n",
+        "# --- Start FastAPI in the background using nohup ---\n",
+        "print(\"Starting FastAPI app in the background using nohup. Output redirected to fastapi_log.txt.\")\n",
+        "os.system(f\"nohup uvicorn thiqla_api:app --host 0.0.0.0 --port 8000 > fastapi_log.txt 2>&1 &\")\n",
+        "time.sleep(10) # Give FastAPI a sufficient moment to start up and initialize\n",
+        "\n",
+        "# --- Verify FastAPI is running ---\n",
+        "print(\"Checking if FastAPI is listening on port 8000...\")\n",
+        "try:\n",
+        "    wait_for_port(8000)\n",
+        "    print(\"✅ FastAPI is running on http://localhost:8000\")\n",
+        "except TimeoutError as te:\n",
+        "    print(f\"❌ {te}\")\n",
+        "    raise RuntimeError(\"FastAPI did not start in time. Aborting.\")\n",
+        "\n",
+        "# --- Connect Ngrok ONLY to Streamlit (port 8501) ---\n",
+        "public_url_streamlit = None\n",
+        "print(\"\\nStarting Streamlit app in the background. Check 'streamlit_log.txt' for output.\")\n",
+        "streamlit_process = subprocess.Popen(\n",
+        "    [\"streamlit\", \"run\", \"thiqla_app.py\", \"--server.port\", \"8501\", \"--server.headless\", \"True\"],\n",
+        "    stdout=open(\"streamlit_log.txt\", \"w\"),\n",
+        "    stderr=subprocess.STDOUT,\n",
+        "    preexec_fn=os.setpgrp,\n",
+        "    env=os.environ.copy(), # Start with a fresh environment, will update with public URLs later\n",
+        "    cwd=project_path\n",
+        ")\n",
+        "\n",
+        "print(f\"Streamlit process started with PID: {streamlit_process.pid}. Waiting for it to initialize and open port 8501...\")\n",
+        "try:\n",
+        "    wait_for_port(8501)\n",
+        "    time.sleep(5) # Give Streamlit a little extra time to stabilize after port opens\n",
+        "except TimeoutError as te:\n",
+        "    print(f\"❌ {te}\")\n",
+        "    raise RuntimeError(\"Streamlit did not start in time. Aborting.\")\n",
+        "\n",
+        "print(\"\\nConnecting ngrok to Streamlit (port 8501)....\")\n",
+        "try:\n",
+        "    # Explicitly specify addr for pyngrok to use IPv4 localhost\n",
+        "    tunnel_streamlit = ngrok.connect(addr=\"127.0.0.1:8501\", proto=\"http\")\n",
+        "    public_url_streamlit = tunnel_streamlit.public_url\n",
+        "    print(f\"🔗 AKSES DASHBOARD STREAMLIT: {public_url_streamlit}\")\n",
+        "except Exception as e:\n",
+        "    print(f\"❌ Gagal membuat tunnel ngrok untuk Streamlit: {e}\")\n",
+        "    raise RuntimeError(\"Failed to establish ngrok tunnel for Streamlit. Aborting.\")\n",
+        "\n",
+        "# --- Create environment dictionary for Streamlit ---\n",
+        "# Only pass Streamlit's own public URL. FastAPI is internal.\n",
+        "streamlit_env = os.environ.copy()\n",
+        "streamlit_env[\"FASTAPI_INTERNAL_URL\"] = \"http://localhost:8000\" # For Streamlit's internal calls to FastAPI\n",
+        "streamlit_env[\"STREAMLIT_FRONTEND_BASE_URL\"] = public_url_streamlit # Streamlit's own public URL\n",
+        "# Do NOT set FASTAPI_PUBLIC_URL as it will be accessed internally by Streamlit for video bytes\n",
+        "\n",
+        "# Restart Streamlit with the updated environment variables\n",
+        "# First, kill the existing streamlit process\n",
+        "if streamlit_process.poll() is None: # Check if it's still running\n",
+        "    print(f\"Killing existing Streamlit process (PID: {streamlit_process.pid}) to restart with updated environment variables.\")\n",
+        "    os.killpg(os.getpgid(streamlit_process.pid), 15) # Send SIGTERM\n",
+        "    time.sleep(5)\n",
+        "    !fuser -k 8501/tcp || true # Ensure port is free\n",
+        "    time.sleep(2)\n",
+        "\n",
+        "print(\"\\nRestarting Streamlit app with public URLs in environment. Check 'streamlit_log.txt' for output.\")\n",
+        "streamlit_process = subprocess.Popen(\n",
+        "    [\"streamlit\", \"run\", \"thiqla_app.py\", \"--server.port\", \"8501\", \"--server.headless\", \"True\"],\n",
+        "    stdout=open(\"streamlit_log.txt\", \"w\"),\n",
+        "    stderr=subprocess.STDOUT,\n",
+        "    preexec_fn=os.setpgrp,\n",
+        "    env=streamlit_env, # Pass the custom environment variables at launch\n",
+        "    cwd=project_path\n",
+        ")\n",
+        "\n",
+        "print(f\"Streamlit process restarted with PID: {streamlit_process.pid}. Waiting for it to initialize and open port 8501...\")\n",
+        "try:\n",
+        "    wait_for_port(8501) # Wait for Streamlit to be truly ready again\n",
+        "    time.sleep(5) # Give Streamlit a little extra time to stabilize after port opens\n",
+        "except TimeoutError as te:\n",
+        "    print(f\"❌ {te}\")\n",
+        "    raise RuntimeError(\"Streamlit did not restart in time. Aborting.\")\n",
+        "\n",
+        "# --- VERIFY URLs ---\n",
+        "print(f\"\\n✅ Ngrok tunnel established for Streamlit at {public_url_streamlit}\")\n",
+        "print(\"✅ FastAPI is running internally at http://localhost:8000\")\n",
+        "\n",
+        "# Check if services are running and listening\n",
+        "print(\"\\nChecking if FastAPI is listening on port 8000...\")\n",
+        "!lsof -i :8000\n",
+        "print(\"Checking if Streamlit is listening on port 8501...\")\n",
+        "!lsof -i :8501"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Attempting to kill any lingering ngrok processes aggressively and disconnect tunnels...\n",
+            "pkill -f ngrok executed.\n",
+            "No ngrok processes detected. Proceeding.\n",
+            "Explicitly disconnecting any active ngrok tunnels (if any remained)...\n",
+            "Attempting to kill any process on port 8501 (Streamlit) and 8000 (FastAPI)...\n",
+            "8501/tcp:            42871\n",
+            "8000/tcp:            42753\n",
+            "/content/ai-multimedia-privacy-agent/thiqla_project\n",
+            "Setting asyncio default event loop policy for background processes...\n",
+            "Starting FastAPI app in the background using nohup. Output redirected to fastapi_log.txt.\n",
+            "Checking if FastAPI is listening on port 8000...\n",
+            "Port 8000 is open!\n",
+            "✅ FastAPI is running on http://localhost:8000\n",
+            "\n",
+            "Starting Streamlit app in the background. Check 'streamlit_log.txt' for output.\n",
+            "Streamlit process started with PID: 47233. Waiting for it to initialize and open port 8501...\n",
+            "Waiting for port 8501 to open...\n",
+            "Port 8501 is open!\n",
+            "\n",
+            "Connecting ngrok to Streamlit (port 8501)....\n",
+            "🔗 AKSES DASHBOARD STREAMLIT: https://murmuring-stimuli-untangled.ngrok-free.dev\n",
+            "Killing existing Streamlit process (PID: 47233) to restart with updated environment variables.\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:07:55+0000 lvl=warn msg=\"failed to open private leg\" id=4af7e3342637 privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:07:55+0000 lvl=warn msg=\"failed to open private leg\" id=a423260505fb privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:07:57+0000 lvl=warn msg=\"failed to open private leg\" id=fddeb00f4c73 privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:07:57+0000 lvl=warn msg=\"failed to open private leg\" id=c104ac707aeb privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:07:58+0000 lvl=warn msg=\"failed to open private leg\" id=9a4bf6c12776 privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:07:58+0000 lvl=warn msg=\"failed to open private leg\" id=1441282711d4 privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:08:00+0000 lvl=warn msg=\"failed to open private leg\" id=2004cd0e9ea7 privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:08:00+0000 lvl=warn msg=\"failed to open private leg\" id=972044d9055f privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:08:01+0000 lvl=warn msg=\"failed to open private leg\" id=63302eacd3ec privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n",
+            "WARNING:pyngrok.process.ngrok:t=2026-06-28T09:08:01+0000 lvl=warn msg=\"failed to open private leg\" id=da5685fb5622 privaddr=127.0.0.1:8501 err=\"dial tcp 127.0.0.1:8501: connect: connection refused\"\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Restarting Streamlit app with public URLs in environment. Check 'streamlit_log.txt' for output.\n",
+            "Streamlit process restarted with PID: 47303. Waiting for it to initialize and open port 8501...\n",
+            "Waiting for port 8501 to open...\n",
+            "Port 8501 is open!\n",
+            "\n",
+            "✅ Ngrok tunnel established for Streamlit at https://murmuring-stimuli-untangled.ngrok-free.dev\n",
+            "✅ FastAPI is running internally at http://localhost:8000\n",
+            "\n",
+            "Checking if FastAPI is listening on port 8000...\n",
+            "COMMAND   PID USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME\n",
+            "uvicorn 47189 root   13u  IPv4 1189464      0t0  TCP *:8000 (LISTEN)\n",
+            "Checking if Streamlit is listening on port 8501...\n",
+            "COMMAND     PID USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME\n",
+            "ngrok     47142 root    7u  IPv4 1191779      0t0  TCP localhost:41978->localhost:8501 (ESTABLISHED)\n",
+            "ngrok     47142 root   10u  IPv4 1191780      0t0  TCP localhost:41994->localhost:8501 (ESTABLISHED)\n",
+            "ngrok     47142 root   11u  IPv4 1191812      0t0  TCP localhost:42008->localhost:8501 (ESTABLISHED)\n",
+            "ngrok     47142 root   12u  IPv4 1191817      0t0  TCP localhost:42010->localhost:8501 (ESTABLISHED)\n",
+            "streamlit 47303 root   13u  IPv4 1192497      0t0  TCP *:8501 (LISTEN)\n",
+            "streamlit 47303 root   15u  IPv4 1192505      0t0  TCP localhost:8501->localhost:41978 (ESTABLISHED)\n",
+            "streamlit 47303 root   16u  IPv4 1192506      0t0  TCP localhost:8501->localhost:41994 (ESTABLISHED)\n",
+            "streamlit 47303 root   17u  IPv4 1192525      0t0  TCP localhost:8501->localhost:42008 (ESTABLISHED)\n",
+            "streamlit 47303 root   21u  IPv4 1191818      0t0  TCP localhost:8501->localhost:42010 (ESTABLISHED)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c0c644fc"
+      },
+      "source": [
+        "## 🛡️ Tahap 4: Pengujian Live Stream (Simulasi Webcam)\n",
+        "\n",
+        "Karena keterbatasan akses webcam di Google Colab, skrip `thiqla_live_agent.py` di bawah ini akan beroperasi dalam dua mode:\n",
+        "\n",
+        "1.  **Di Google Colab:** Skrip akan secara otomatis mendeteksi lingkungan Colab dan menggunakan `video_lokal_tes.mp4` sebagai sumber input video. Hasil pemrosesan akan ditampilkan frame demi frame langsung di output sel.\n",
+        "2.  **Di Lingkungan Lokal (dengan Webcam):** Jika Anda menjalankan skrip ini di komputer lokal dengan Python, ia akan mencoba mengakses webcam utama Anda (`cv2.VideoCapture(0)`) dan menampilkan hasil sanitasi di jendela pop-up `cv2.imshow()`.\n",
+        "\n",
+        "Skrip ini akan mendemonstrasikan bagaimana filter privasi bekerja secara *live*."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c550c579"
+      },
+      "source": [
+        "## 🚀 Menyiapkan Demo di Hugging Face Spaces\n",
+        "\n",
+        "Untuk mendemonstrasikan video yang sudah diproses (`api_output_clean_retest.mp4`) di Hugging Face Spaces, kita perlu membuat aplikasi Streamlit sederhana (`app.py`), daftar dependensi (`requirements.txt`), dan file konfigurasi Space (`README.md`)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b19838da",
+        "outputId": "4a773e72-715e-4024-fa74-812d7a1f6688"
+      },
+      "source": [
+        "%%writefile app.py\n",
+        "import streamlit as st\n",
+        "import os\n",
+        "\n",
+        "st.set_page_config(layout=\"wide\")\n",
+        "st.title(\"✨ Demo Video Terprivasi Thiqla AI\")\n",
+        "st.markdown(\"Video di bawah ini adalah hasil dari proses sanitasi privasi oleh Thiqla AI.\")\n",
+        "\n",
+        "video_path = \"api_output_clean_retest.mp4\"\n",
+        "\n",
+        "if os.path.exists(video_path):\n",
+        "    st.video(video_path, format=\"video/mp4\")\n",
+        "    st.download_button(\n",
+        "        label=\"Unduh Video Terprivasi\",\n",
+        "        data=open(video_path, 'rb').read(),\n",
+        "        file_name=\"thila_clean_demo.mp4\",\n",
+        "        mime=\"video/mp4\"\n",
+        "    )\n",
+        "else:\n",
+        "    st.error(f\"Error: File video '{video_path}' tidak ditemukan. Pastikan Anda telah menjalankan proses sanitasi video sebelumnya.\")\n",
+        "\n",
+        "st.caption(\"Demo ini menampilkan video yang sudah diproses sebelumnya, bukan live stream.\")\n"
+      ],
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Writing app.py\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "34945e82",
+        "outputId": "3758fe00-a2e0-43ae-d3e2-64944fe1fc9e"
+      },
+      "source": [
+        "%%writefile requirements.txt\n",
+        "streamlit\n"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Overwriting requirements.txt\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f3feecca",
+        "outputId": "4e720a1c-b9e2-4a3d-bbcd-0c37237d4d2a"
+      },
+      "source": [
+        "%%writefile README.md\n",
+        "---\n",
+        "moon_landing: true\n",
+        "base_model: openai/clip-vit-large-patch14\n",
+        "license: mit\n",
+        "---\n",
+        "# Thiqla AI Privacy Agent Demo\n",
+        "\n",
+        "Ini adalah demo sederhana yang menampilkan video yang telah disanitasi menggunakan Thiqla AI Privacy Agent.\n",
+        "\n",
+        "Video ini adalah contoh output dari API sanitasi video, yang memperlihatkan bagaimana wajah dapat diblur untuk menjaga privasi.\n",
+        "\n",
+        "## Cara Kerja\n",
+        "\n",
+        "Aplikasi ini menggunakan Streamlit untuk menampilkan file video `api_output_clean_retest.mp4` yang telah diproses sebelumnya. Anda dapat mengunduh video tersebut langsung dari antarmuka.\n",
+        "\n",
+        "## File Proyek\n",
+        "\n",
+        "*   `app.py`: Aplikasi Streamlit utama.\n",
+        "*   `requirements.txt`: Daftar dependensi Python.\n",
+        "*   `api_output_clean_retest.mp4`: Video yang sudah disanitasi yang ditampilkan di demo ini.\n",
+        "\n",
+        "Untuk menjalankan demo ini di Hugging Face Spaces:\n",
+        "\n",
+        "1.  Buat Space baru.\n",
+        "2.  Pilih SDK sebagai 'Streamlit'.\n",
+        "3.  Pilih Python version (misalnya, `3.10` atau `3.11`).\n",
+        "4.  Unggah ketiga file ini (`app.py`, `requirements.txt`, `api_output_clean_retest.mp4`) ke repositori Space Anda.\n",
+        "\n"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Writing README.md\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "d6137e45"
+      },
+      "source": [
+        "Sekarang, Anda memiliki tiga file yang diperlukan (`app.py`, `requirements.txt`, `README.md`) di direktori `/content/ai-multimedia-privacy-agent/thiqla_project`.\n",
+        "\n",
+        "**Langkah selanjutnya untuk deploy ke Hugging Face Spaces:**\n",
+        "\n",
+        "1.  **Buat Space Baru di Hugging Face:**\n",
+        "    *   Pergi ke [huggingface.co/new-space](https://huggingface.co/new-space).\n",
+        "    *   Berikan nama untuk Space Anda, pilih **Streamlit** sebagai `Space SDK`, dan pilih versi Python yang Anda inginkan (misalnya, `3.10` atau `3.11`).\n",
+        "    *   Pilih lisensi dan visibilitas (Public/Private).\n",
+        "\n",
+        "2.  **Unggah File:**\n",
+        "    *   Setelah Space dibuat, Anda akan diarahkan ke halaman repositori Space Anda.\n",
+        "    *   Gunakan antarmuka web atau perintah Git untuk mengunggah ketiga file yang baru saja kita buat:\n",
+        "        *   `app.py`\n",
+        "        *   `requirements.txt`\n",
+        "        *   `README.md`\n",
+        "        *   **Jangan lupa mengunggah file video:** `api_output_clean_retest.mp4` (Ini adalah video hasil proses sanitasi dari API sebelumnya).\n",
+        "\n",
+        "    *   **Mengunggah via Git (Direkomendasikan):**\n",
+        "        ```bash\n",
+        "        # Pastikan Anda telah menginstal git-lfs\n",
+        "        # git lfs install\n",
+        "\n",
+        "        # Kloning Space Anda ke Colab (ganti <your-username> dan <your-space-name>)\n",
+        "        # git clone https://huggingface.co/<your-username>/<your-space-name>\n",
+        "\n",
+        "        # Pindahkan file-file yang sudah kita buat ke folder Space yang baru dikloning\n",
+        "        # mv /content/ai-multimedia-privacy-agent/thiqla_project/app.py <your-space-name>/\n",
+        "        # mv /content/ai-multimedia-privacy-agent/thiqla_project/requirements.txt <your-space-name>/\n",
+        "        # mv /content/ai-multimedia-privacy-agent/thiqla_project/README.md <your-space-name>/\n",
+        "        # mv /content/ai-multimedia-privacy-agent/thiqla_project/api_output_clean_retest.mp4 <your-space-name>/\n",
+        "\n",
+        "        # Masuk ke folder Space Anda\n",
+        "        # cd <your-space-name>\n",
+        "\n",
+        "        # Tambahkan semua file dan commit\n",
+        "        # git add .\n",
+        "        # git commit -m \"Initial demo files\"\n",
+        "\n",
+        "        # Push ke Hugging Face (Anda mungkin perlu login lagi dengan `huggingface-cli login`)\n",
+        "        # git push\n",
+        "        ```\n",
+        "\n",
+        "Setelah file diunggah, Hugging Face Spaces akan secara otomatis mendeteksi `app.py` dan `requirements.txt`, menginstal dependensi, dan meluncurkan aplikasi Streamlit Anda. Anda kemudian dapat membagikan URL Space Anda untuk mendemonstrasikan hasilnya!"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6d1fb947",
+        "outputId": "ff916e1a-2a5d-40d4-db47-f061b2d83402"
+      },
+      "source": [
+        "%%writefile /content/ai-multimedia-privacy-agent/thiqla_project/thiqla_live_agent.py\n",
+        "import cv2\n",
+        "import time\n",
+        "import os\n",
+        "import sys\n",
+        "import numpy as np\n",
+        "from typing import TypedDict\n",
+        "from langgraph.graph import StateGraph, END\n",
+        "\n",
+        "# Conditional import for Colab display\n",
+        "try:\n",
+        "    from google.colab.patches import cv2_imshow\n",
+        "    from IPython.display import display, clear_output\n",
+        "    from PIL import Image # Explicitly import Image from PIL\n",
+        "    IS_COLAB = True\n",
+        "except ImportError:\n",
+        "    IS_COLAB = False\n",
+        "\n",
+        "# --- LangGraph Engine Configuration (copied from thiqla_api.py) ---\n",
+        "class LivestreamState(TypedDict):\n",
+        "    face_detected: bool\n",
+        "    duration_violating: float\n",
+        "    system_alert: str\n",
+        "\n",
+        "def supervisor_node(state: LivestreamState):\n",
+        "    face_present = state.get(\"face_detected\", False)\n",
+        "    current_duration = state.get(\"duration_violating\", 0.0)\n",
+        "\n",
+        "    alert = \"✅ STATUS: PRIVACY CLEAN\"\n",
+        "    if face_present:\n",
+        "        if current_duration >= 3.0:\n",
+        "            alert = f\"🚨 CRITICAL: FACE DETECTED TOO LONG ({current_duration:.1f}s)\"\n",
+        "        else:\n",
+        "            alert = f\"⚠️ WARNING: SHARIA GUARDRAIL ACTIVE ({current_duration:.1f}s)\"\n",
+        "\n",
+        "    return {\"system_alert\": alert}\n",
+        "\n",
+        "def compile_agent():\n",
+        "    workflow = StateGraph(LivestreamState)\n",
+        "    workflow.add_node(\"supervisor\", supervisor_node)\n",
+        "    workflow.set_entry_point(\"supervisor\")\n",
+        "    workflow.add_edge(\"supervisor\", END)\n",
+        "    return workflow.compile()\n",
+        "\n",
+        "# Inisialisasi Agent Tunggal & Face Cascade\n",
+        "agent = compile_agent()\n",
+        "face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')\n",
+        "\n",
+        "# --- Video Source Configuration ---\n",
+        "# Determine video source based on environment\n",
+        "video_source = 0 # Default to webcam\n",
+        "if IS_COLAB:\n",
+        "    print(\"☁️ Mendeteksi Lingkungan Google Colab. Menggunakan file video: 'video_lokal_tes.mp4' sebagai simulasi webcam.\")\n",
+        "    video_source = \"video_lokal_tes.mp4\"\n",
+        "    if not os.path.exists(video_source):\n",
+        "        print(f\"❌ ERROR: File '{video_source}' tidak ditemukan. Pastikan Anda telah menjalakan sel yang membuat video tes.\")\n",
+        "        sys.exit(1)\n",
+        "else:\n",
+        "    print(\"🖥️ Lingkungan lokal terdeteksi. Mencoba menggunakan webcam (indeks 0).\")\n",
+        "\n",
+        "cap = cv2.VideoCapture(video_source)\n",
+        "\n",
+        "if not cap.isOpened():\n",
+        "    print(f\"❌ Gagal mengakses Source ({video_source})! Pastikan file tersedia atau kamera tidak terkunci.\")\n",
+        "    sys.exit(1)\n",
+        "\n",
+        "fps = cap.get(cv2.CAP_PROP_FPS) if cap.get(cv2.CAP_PROP_FPS) > 0 else 24\n",
+        "width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) if cap.get(cv2.CAP_PROP_FRAME_WIDTH) > 0 else 640\n",
+        "height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) if cap.get(cv2.CAP_PROP_FRAME_HEIGHT) > 0 else 480\n",
+        "\n",
+        "print(f\"🔄 Menyalakan Thiqla Live Engine pada Source: {video_source} ({width}x{height} @ {fps:.2f} FPS)...\")\n",
+        "\n",
+        "face_detected_status = False\n",
+        "start_detection_time = None\n",
+        "duration_violating = 0.0\n",
+        "\n",
+        "# Optimization parameters for faster face detection (copied from thiqla_api.py)\n",
+        "detection_downscale_factor = 0.5\n",
+        "detection_min_neighbors = 5\n",
+        "detection_min_size = (int(40 * detection_downscale_factor), int(40 * detection_downscale_factor))\n",
+        "\n",
+        "frame_count = 0\n",
+        "start_processing_time = time.time()\n",
+        "\n",
+        "while True:\n",
+        "    ret, frame = cap.read()\n",
+        "    if not ret:\n",
+        "        print(\"End of video stream or failed to read frame.\")\n",
+        "        break\n",
+        "\n",
+        "    frame_count += 1\n",
+        "    processing_frame_start = time.time()\n",
+        "\n",
+        "    # Resize frame to a consistent size for display (e.g., 640x360 for better fit in colab)\n",
+        "    display_width = 640\n",
+        "    display_height = int(height * (display_width / width)) if width > 0 else 480\n",
+        "    if display_width != width or display_height != height:\n",
+        "        frame_for_display = cv2.resize(frame, (display_width, display_height))\n",
+        "    else:\n",
+        "        frame_for_display = frame.copy()\n",
+        "\n",
+        "\n",
+        "    # Create a smaller version of the frame for faster face detection\n",
+        "    small_frame = cv2.resize(frame, (0, 0), fx=detection_downscale_factor, fy=detection_downscale_factor, interpolation=cv2.INTER_AREA)\n",
+        "    small_gray = cv2.cvtColor(small_frame, cv2.COLOR_BGR2GRAY)\n",
+        "\n",
+        "    # Perform face detection on the smaller frame\n",
+        "    faces_detected_on_small = face_cascade.detectMultiScale(\n",
+        "        small_gray,\n",
+        "        scaleFactor=1.1,\n",
+        "        minNeighbors=detection_min_neighbors,\n",
+        "        minSize=detection_min_size\n",
+        "    )\n",
+        "\n",
+        "    # Scale detected face coordinates back to the original frame size\n",
+        "    faces = []\n",
+        "    for (x, y, w, h) in faces_detected_on_small:\n",
+        "        x_orig = int(x / detection_downscale_factor)\n",
+        "        y_orig = int(y / detection_downscale_factor)\n",
+        "        w_orig = int(w / detection_downscale_factor)\n",
+        "        h_orig = int(h / detection_downscale_factor)\n",
+        "        faces.append((x_orig, y_orig, w_orig, h_orig))\n",
+        "\n",
+        "    if len(faces) > 0:\n",
+        "        face_detected_status = True\n",
+        "        if start_detection_time is None:\n",
+        "            start_detection_time = time.time()\n",
+        "        duration_violating = time.time() - start_detection_time\n",
+        "\n",
+        "        for (x, y, w, h) in faces:\n",
+        "            # Ensure coordinates are within frame bounds to prevent errors\n",
+        "            y1, y2 = max(0, y), min(height, y + h)\n",
+        "            x1, x2 = max(0, x), min(width, x + w)\n",
+        "\n",
+        "            if y2 > y1 and x2 > x1: # Ensure valid region\n",
+        "                sub_face = frame_for_display[y1:y2, x1:x2]\n",
+        "                kernel_size = 99\n",
+        "                if sub_face.shape[0] < kernel_size or sub_face.shape[1] < kernel_size:\n",
+        "                    kernel_size = min(sub_face.shape[0], sub_face.shape[1])\n",
+        "                    kernel_size = kernel_size if kernel_size % 2 == 1 else kernel_size - 1\n",
+        "                    kernel_size = max(1, kernel_size)\n",
+        "\n",
+        "                if kernel_size > 1:\n",
+        "                    frame_for_display[y1:y2, x1:x2] = cv2.GaussianBlur(sub_face, (kernel_size, kernel_size), 15)\n",
+        "                else:\n",
+        "                    frame_for_display[y1:y2, x1:x2] = (0,0,0) # Fill with black if too small to blur\n",
+        "\n",
+        "    else:\n",
+        "        face_detected_status = False\n",
+        "        start_detection_time = None\n",
+        "        duration_violating = 0.0\n",
+        "\n",
+        "    graph_output = agent.invoke({\n",
+        "        \"face_detected\": face_detected_status,\n",
+        "        \"duration_violating\": duration_violating,\n",
+        "        \"system_alert\": \"\"\n",
+        "    })\n",
+        "    alert_text = graph_output[\"system_alert\"]\n",
+        "\n",
+        "    text_color = (0, 0, 255) if \"⚠️\" in alert_text or \"🚨\" in alert_text else (0, 255, 0)\n",
+        "    cv2.rectangle(frame_for_display, (10, 10), (display_width - 10, 45), (0, 0, 0), -1)\n",
+        "    cv2.putText(frame_for_display, alert_text, (20, 32), cv2.FONT_HERSHEY_SIMPLEX, 0.45, text_color, 2)\n",
+        "\n",
+        "    if IS_COLAB:\n",
+        "        clear_output(wait=True) # Clear previous frame\n",
+        "        cv2_imshow(frame_for_display)\n",
+        "        # Simulate FPS with a delay\n",
+        "        frame_processing_time = time.time() - processing_frame_start\n",
+        "        delay = max(1, int((1000/fps - frame_processing_time*1000))) # Target 1/fps second per frame\n",
+        "        #print(f\"Frame {frame_count}: Processing time {frame_processing_time:.4f}s, Delay {delay}ms\")\n",
+        "        # In colab, using time.sleep is better for visual update than cv2.waitKey\n",
+        "        time.sleep(delay / 1000.0)\n",
+        "    else:\n",
+        "        cv2.imshow('Thiqla Live Sanitization', frame_for_display)\n",
+        "        if cv2.waitKey(1) & 0xFF == ord('q'):\n",
+        "            break\n",
+        "\n",
+        "total_processing_time = time.time() - start_processing_time\n",
+        "print(f\"Total processed frames: {frame_count}\")\n",
+        "print(f\"Total live processing time: {total_processing_time:.2f} seconds.\")\n",
+        "if frame_count > 0:\n",
+        "    print(f\"Average FPS (processing + display): {frame_count / total_processing_time:.2f}\")\n",
+        "\n",
+        "cap.release()\n",
+        "if not IS_COLAB:\n",
+        "    cv2.destroyAllWindows()\n",
+        "\n",
+        "print(\"Thiqla Live Engine has stopped.\")"
+      ],
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Overwriting /content/ai-multimedia-privacy-agent/thiqla_project/thiqla_live_agent.py\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "67710af1",
+        "outputId": "595e6e4d-2b5f-4fc3-bcea-591adc8805b9"
+      },
+      "source": [
+        "# Sekarang Anda bisa menjalankan skrip thiqla_live_agent.py\n",
+        "# Pastikan Anda berada di direktori yang benar\n",
+        "%cd /content/ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "# Install Pillow to fix the AttributeError\n",
+        "!pip install Pillow\n",
+        "\n",
+        "!python3 thiqla_live_agent.py"
+      ],
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/content/ai-multimedia-privacy-agent/thiqla_project\n",
+            "Requirement already satisfied: Pillow in /usr/local/lib/python3.12/dist-packages (11.3.0)\n",
+            "☁️ Mendeteksi Lingkungan Google Colab. Menggunakan file video: 'video_lokal_tes.mp4' sebagai simulasi webcam.\n",
+            "🔄 Menyalakan Thiqla Live Engine pada Source: video_lokal_tes.mp4 (640x480 @ 24.00 FPS)...\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F799E7D7F0>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798CB8DA0>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F799E7D7F0>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798ACB350>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F7995BC410>\n",
+            "<PIL.Image.Image image mode=RGB size=640x480 at 0x79F798F72750>\n",
+            "End of video stream or failed to read frame.\n",
+            "Total processed frames: 120\n",
+            "Total live processing time: 5.07 seconds.\n",
+            "Average FPS (processing + display): 23.69\n",
+            "Thiqla Live Engine has stopped.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c5142a2b"
+      },
+      "source": [
+        "### Checking Streamlit Logs for Errors"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "58880dd6",
+        "outputId": "73544ede-d169-4a4a-e3b7-b3ade1b7db77"
+      },
+      "source": [
+        "import os\n",
+        "\n",
+        "# Ensure we are in the correct directory to access the log file\n",
+        "project_path = \"/content/ai-multimedia-privacy-agent/thiqla_project\"\n",
+        "%cd {project_path}\n",
+        "\n",
+        "# Read and print the content of streamlit_log.txt\n",
+        "log_file_path = \"streamlit_log.txt\"\n",
+        "if os.path.exists(log_file_path):\n",
+        "    with open(log_file_path, 'r') as f:\n",
+        "        print(f.read())\n",
+        "else:\n",
+        "    print(f\"Error: Log file '{log_file_path}' not found.\")\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/content\n",
+            "\n",
+            "Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.\n",
+            "\n",
+            "2026-06-28 07:31:18.094 Uvicorn server started on 0.0.0.0:8501\n",
+            "\n",
+            "  You can now view your Streamlit app in your browser.\n",
+            "\n",
+            "  Local URL: http://localhost:8501\n",
+            "  Network URL: http://172.28.0.12:8501\n",
+            "  External URL: http://34.41.125.250:8501\n",
+            "\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7f60047b",
+        "outputId": "bb77d4c6-b6a2-4b79-e573-ebb7a02ed6ab"
+      },
+      "source": [
+        "from pyngrok import ngrok\n",
+        "\n",
+        "# PERHATIAN: Masukkan Token Autentikasi ngrok Anda di bawah ini.\n",
+        "# Anda bisa mendapatkan token dari dashboard ngrok Anda setelah mendaftar:\n",
+        "# https://dashboard.ngrok.com/get-started/your-authtoken\n",
+        "\n",
+        "# Pastikan Anda mengganti '3FZJvkVJemqrHr8Wuko2P26zVgz_7CRwBY61vSzsi6je2Gcbw' dengan token asli Anda.\n",
+        "NGROK_AUTH_TOKEN = \"3FZJvkVJemqrHr8Wuko2P26zVgz_7CRwBY61vSzsi6je2Gcbw\" # <-- GANTI INI\n",
+        "\n",
+        "if NGROK_AUTH_TOKEN == \"YOUR_NGROK_AUTH_TOKEN\":\n",
+        "    print(\"❌ ERROR: Harap ganti 'Y3FZJvkVJemqrHr8Wuko2P26zVgz_7CRwBY61vSzsi6je2Gcbw' dengan token ngrok Anda yang sebenarnya.\")\n",
+        "    print(\"Dapatkan token Anda di: https://dashboard.ngrok.com/get-started/your-authtoken\")\n",
+        "else:\n",
+        "    try:\n",
+        "        ngrok.set_auth_token(NGROK_AUTH_TOKEN)\n",
+        "        print(\"✅ Token ngrok berhasil diatur. Sekarang Anda bisa menjalankan sel sebelumnya lagi.\")\n",
+        "    except Exception as e:\n",
+        "        print(f\"❌ Gagal mengatur token ngrok: {e}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ Token ngrok berhasil diatur. Sekarang Anda bisa menjalankan sel sebelumnya lagi.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Jalankan ini dan biarkan sel ini tetap \"berputar\" (berjalan)\n",
+        "!uvicorn thiqla_api:app --port 8000 &"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "rXNif69AnS_t",
+        "outputId": "47ed408b-c248-4536-d4bc-95a874676f04"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[32mINFO\u001b[0m:     Started server process [\u001b[36m10823\u001b[0m]\n",
+            "\u001b[32mINFO\u001b[0m:     Waiting for application startup.\n",
+            "\u001b[32mINFO\u001b[0m:     Application startup complete.\n",
+            "\u001b[31mERROR\u001b[0m:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8000): address already in use\n",
+            "\u001b[32mINFO\u001b[0m:     Waiting for application shutdown.\n",
+            "\u001b[32mINFO\u001b[0m:     Application shutdown complete.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "65890e72",
+        "outputId": "89ace251-5c1e-4958-cba7-27a810c4a9db"
+      },
+      "source": [
+        "with open('streamlit_log.txt', 'r') as f:\n",
+        "    print(f.read())"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.\n",
+            "\n",
+            "2026-06-28 06:41:28.072 Uvicorn server started on 0.0.0.0:8501\n",
+            "\n",
+            "  You can now view your Streamlit app in your browser.\n",
+            "\n",
+            "  Local URL: http://localhost:8501\n",
+            "  Network URL: http://172.28.0.12:8501\n",
+            "  External URL: http://34.41.125.250:8501\n",
+            "\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8f8ba57a"
+      },
+      "source": [
+        "**FastAPI Logs (fastapi_log.txt):**"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1695e8e8",
+        "outputId": "90a364e4-deb6-478a-8a37-0aaf2fa6efd6"
+      },
+      "source": [
+        "with open('fastapi_log.txt', 'r') as f:\n",
+        "    print(f.read())"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "INFO:     Started server process [9051]\n",
+            "INFO:     Waiting for application startup.\n",
+            "INFO:     Application startup complete.\n",
+            "INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fa59d6a8",
+        "outputId": "d6ed173e-4b83-4d23-fa57-5e0312109ae1"
+      },
+      "source": [
+        "# Change to the project directory to read the log file\n",
+        "%cd /content/ai-multimedia-privacy-agent/thiqla_project\n",
+        "\n",
+        "print(\"Reading streamlit_log.txt for debug output...\")\n",
+        "\n",
+        "# Read and display the content of streamlit_log.txt\n",
+        "with open('streamlit_log.txt', 'r') as f:\n",
+        "    print(f.read())"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/content\n",
+            "Reading streamlit_log.txt for debug output...\n",
+            "\n",
+            "Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.\n",
+            "\n",
+            "2026-06-28 07:09:57.913 Uvicorn server started on 0.0.0.0:8501\n",
+            "\n",
+            "  You can now view your Streamlit app in your browser.\n",
+            "\n",
+            "  Local URL: http://localhost:8501\n",
+            "  Network URL: http://172.28.0.12:8501\n",
+            "  External URL: http://34.41.125.250:8501\n",
+            "\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3fced26c",
+        "outputId": "d3a7ce07-6161-464d-f8d3-6cd157ed4ddc"
+      },
+      "source": [
+        "# Read and display the content of fastapi_log.txt\n",
+        "with open('fastapi_log.txt', 'r') as f:\n",
+        "    print(f.read())"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "INFO:     Started server process [9051]\n",
+            "INFO:     Waiting for application startup.\n",
+            "INFO:     Application startup complete.\n",
+            "INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "c081a918"
+      },
+      "source": [
+        "# Kill any existing process on port 8000 to ensure a clean start\n",
+        "!fuser -k 8000/tcp\n",
+        "print(\"Attempting to kill any process on port 8000.\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2eeb3986",
+        "outputId": "f74be7c0-2707-4464-eca6-5835cb3e0f96"
+      },
+      "source": [
+        "# Re-run the FastAPI server in the background using nohup and redirect output to a log file\n",
+        "# This makes the process more robust against disconnections.\n",
+        "!nohup uvicorn thiqla_api:app --host 0.0.0.0 --port 8000 > fastapi_log.txt 2>&1 &\n",
+        "print(\"FastAPI server is starting in the background with nohup. Check fastapi_log.txt for output.\")\n",
+        "# Give it a moment to start up\n",
+        "import time\n",
+        "time.sleep(5)\n",
+        "!lsof -i :8000"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "FastAPI server is starting in the background with nohup. Check fastapi_log.txt for output.\n",
+            "COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME\n",
+            "uvicorn 9051 root   13u  IPv4 235604      0t0  TCP *:8000 (LISTEN)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "31925c44",
+        "outputId": "fac5c069-3834-4b82-f94e-11a9838b2053"
+      },
+      "source": [
+        "# Kill any existing process on port 8501 (Streamlit port) to ensure a clean start\n",
+        "print(\"Attempting to kill any process on port 8501...\")\n",
+        "!fuser -k 8501/tcp\n",
+        "import time\n",
+        "time.sleep(2)\n",
+        "!lsof -i :8501"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Attempting to kill any process on port 8501...\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b64cdc4b",
+        "outputId": "e423547a-a848-48eb-8160-913cbda22d50"
+      },
+      "source": [
+        "!lsof -i :8000"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME\n",
+            "python3 1208 root   55u  IPv4  98037      0t0  TCP localhost:8000 (LISTEN)\n",
+            "python3 1208 root   57u  IPv4 119965      0t0  TCP localhost:45866->localhost:8000 (CLOSE_WAIT)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2c9bd6f4",
+        "outputId": "c797a3da-ea0d-4141-fd86-b5d2ded346ec"
+      },
+      "source": [
+        "import os\n",
+        "\n",
+        "# Ensure we are in the correct directory to access the log file\n",
+        "project_path = \"/content/ai-multimedia-privacy-agent/thiqla_project\"\n",
+        "%cd {project_path}\n",
+        "\n",
+        "print(\"Reading streamlit_log.txt for debug output...\")\n",
+        "\n",
+        "# Read and display the content of streamlit_log.txt\n",
+        "log_file_path = \"streamlit_log.txt\"\n",
+        "if os.path.exists(log_file_path):\n",
+        "    with open(log_file_path, 'r') as f:\n",
+        "        print(f.read())\n",
+        "else:\n",
+        "    print(f\"Error: Log file '{log_file_path}' not found.\")"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/content/ai-multimedia-privacy-agent/thiqla_project\n",
+            "Reading streamlit_log.txt for debug output...\n",
+            "\n",
+            "Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.\n",
+            "\n",
+            "2026-06-28 08:14:24.427 Uvicorn server started on 0.0.0.0:8501\n",
+            "\n",
+            "  You can now view your Streamlit app in your browser.\n",
+            "\n",
+            "  Local URL: http://localhost:8501\n",
+            "  Network URL: http://172.28.0.12:8501\n",
+            "  External URL: http://34.41.125.250:8501\n",
+            "\n",
+            "\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
